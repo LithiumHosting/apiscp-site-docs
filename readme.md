@@ -4,7 +4,7 @@
 
 Clone the repo and then composer install  
 Update the `config.php` and `navigation.php` as needed.  
-Run `.\vendor\bin\jigsaw.bat build` to generate the files.  
+Run `.\vendor\bin\jigsaw build` to generate the files.  
 
 The site is served from `build_local`, be sure to set that as your document root.
 
