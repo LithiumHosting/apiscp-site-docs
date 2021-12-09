@@ -1,0 +1,12 @@
+.DS_Store
+node_modules
+yarn.lock
+dist/tailwind.css
+.idea
+
+build_local
+build_staging
+build_production
+vendor
+cache
+source/assets/build/mix-manifest.json
