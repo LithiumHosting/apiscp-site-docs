@@ -131,7 +131,7 @@ This is not an exhaustive list, but instead a list of common rejection notices 
 
 ### Relaying denied
 
-**Explanation:** when mail passes through a server, one of three things must happen: (1) the client sending mail must be [authenticated]({{ $page->baseUrl }}/e-mail/unable-send-e-mail/) with the server usually by sending a [login/password]({{ $page->baseUrl }}/e-mail/accessing-e-mail/ "Accessing e-mail"), (2) the receiving server must be configured to know its the final destination for the recipient, _or_ (3) the receiving server must be configured to pass the message off to another server en route to its final destination. If any of these conditions are not met, it is construed as an unapproved "relay", which is _case #3_ without proper configuration.
+**Explanation:** when mail passes through a server, one of three things must happen: (1) the client sending mail must be [authenticated](/docs/e-mail/unable-send-e-mail/) with the server usually by sending a [login/password](/docs/e-mail/accessing-e-mail/ "Accessing e-mail"), (2) the receiving server must be configured to know its the final destination for the recipient, _or_ (3) the receiving server must be configured to pass the message off to another server en route to its final destination. If any of these conditions are not met, it is construed as an unapproved "relay", which is _case #3_ without proper configuration.
 
 1. Sample (case #2, recipient end is improperly configured as reported by _Remote-MTA_):
     
@@ -144,13 +144,13 @@ This is not an exhaustive list, but instead a list of common rejection notices 
     **Remote-MTA: dns; mx1.emailsrvr.com** 
     Diagnostic-Code: smtp; 550 5.7.1 <information@somedomain.com>: **Relay access denied.**
     
-2. Sample (case #1, destination e-mail elsewhere, resolve by [authenticating]({{ $page->baseUrl }}/e-mail/unable-send-e-mail/ "Unable to send e-mail") with the mail server):
+2. Sample (case #1, destination e-mail elsewhere, resolve by [authenticating](/docs/e-mail/unable-send-e-mail/ "Unable to send e-mail") with the mail server):
     
     The message could not be sent because one of the recipients was rejected by the server. 
     
     The rejected e-mail address was 'user@anotherdomain.com'. Account: 'mail.mydomain.com', Server: 'mail.mydomain.com', Protocol: SMTP, Server Response: '550 5.7.1 <user@anotherdomain.com>... **Relaying denied. Proper authentication required.**', Port: 25, Secure(SSL): No, Server Error: 550, Error Number: 0x800CCC79
     
-3. Sample (case #2, if domain is part of your account, resolve by [authorizing server]({{ $page->baseUrl }}/e-mail/authorizing-hostnames-handle-e-mail/ "Authorizing hostnames to handle e-mail") to handle mail for domain):
+3. Sample (case #2, if domain is part of your account, resolve by [authorizing server](/docs/e-mail/authorizing-hostnames-handle-e-mail/ "Authorizing hostnames to handle e-mail") to handle mail for domain):
     
     Delivery to the following recipient failed permanently:
          info@mydomain.com
@@ -163,7 +163,7 @@ This is not an exhaustive list, but instead a list of common rejection notices 
 
 ### DNS blacklist
 
-**Explanation:** although uncommon, our mail servers end up on DNS blacklists for inappropriate behavior (account gets hacked, begins to disseminate spam). Open a ticket within the [control panel]({{ $page->baseUrl }}/control-panel/logging-into-the-control-panel/ "Logging into the control panel") under **Help** > **Trouble Tickets** and include a copy of the message for us to look into it and get the server delisted.
+**Explanation:** although uncommon, our mail servers end up on DNS blacklists for inappropriate behavior (account gets hacked, begins to disseminate spam). Open a ticket within the [control panel](/docs/control-panel/logging-into-the-control-panel/ "Logging into the control panel") under **Help** > **Trouble Tickets** and include a copy of the message for us to look into it and get the server delisted.
 
 1. Sample:
     

@@ -17,4 +17,4 @@ The domain is present in **Mail** > **Mail Routing** within the control panel.
 
 ## Solution
 
-Visit **Mail** > **Mail Routing** within the [control panel]({{ $page->baseUrl }}/control-panel/logging-into-the-control-panel/ "Logging into the control panel") and deauthorize the server from handling mail for that domain by deleting the record.
+Visit **Mail** > **Mail Routing** within the [control panel](/docs/control-panel/logging-into-the-control-panel/ "Logging into the control panel") and deauthorize the server from handling mail for that domain by deleting the record.

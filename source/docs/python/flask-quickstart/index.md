@@ -7,20 +7,20 @@ date: "2015-03-08"
 
 ## Overview
 
-[Flask](http://flask.pocoo.org/) is a Python microframework for building web sites with minimal overhead. Think of it as a lightweight version of Django with fewer features, but better speed. Flask is supported on [v6+]({{ $page->baseUrl }}/platform/determining-platform-version/ "Determining platform version") platforms using [Passenger](http://www.phusionpassenger.com).
+[Flask](http://flask.pocoo.org/) is a Python microframework for building web sites with minimal overhead. Think of it as a lightweight version of Django with fewer features, but better speed. Flask is supported on [v6+](/docs/platform/determining-platform-version/ "Determining platform version") platforms using [Passenger](http://www.phusionpassenger.com).
 
 ## Quickstart
 
-All steps are done from the [terminal]({{ $page->baseUrl }}/terminal/accessing-terminal/ "Accessing terminal"). While it may be possible to deploy a Flask application without using terminal, it is strongly recommended for ease.
+All steps are done from the [terminal](/docs/terminal/accessing-terminal/ "Accessing terminal"). While it may be possible to deploy a Flask application without using terminal, it is strongly recommended for ease.
 
-1. Prerequisite: create a [Passenger-compatible]({{ $page->baseUrl }}/cgi-passenger/passenger-application-layout/ "Passenger application layout") filesystem layout
+1. Prerequisite: create a [Passenger-compatible](/docs/cgi-passenger/passenger-application-layout/ "Passenger application layout") filesystem layout
 2. Change directories to the base, we'll name the base directory `flask` in `/var/www`
     - `cd /var/www/flask`
-3. _Optional_: determine which [Python version]({{ $page->baseUrl }}/python/changing-python-versions/ "Changing Python versions") to use for Flask using pyenv
-4. Install flask using [pip]({{ $page->baseUrl }}/python/installing-packages/ "Installing packages"):
+3. _Optional_: determine which [Python version](/docs/python/changing-python-versions/ "Changing Python versions") to use for Flask using pyenv
+4. Install flask using [pip](/docs/python/installing-packages/ "Installing packages"):
     - pip install flask
         
-5. Create a Passenger startup file to run Flask as a Python [WSGI application]({{ $page->baseUrl }}/python/using-wsgi/ "Using WSGI"):
+5. Create a Passenger startup file to run Flask as a Python [WSGI application](/docs/python/using-wsgi/ "Using WSGI"):
     - from flask import Flask
         application = Flask(\_\_name\_\_)
          
@@ -37,7 +37,7 @@ All steps are done from the [terminal]({{ $page->baseUrl }}/terminal/accessing-t
 
 ### Restarting a Flask app
 
-Since Flask runs using Passenger, it uses the same [restart method]({{ $page->baseUrl }}/ruby/restarting-passenger-processes/ "Restarting Passenger processes") as any Passenger-backed app.
+Since Flask runs using Passenger, it uses the same [restart method](/docs/ruby/restarting-passenger-processes/ "Restarting Passenger processes") as any Passenger-backed app.
 
 ## See also
 

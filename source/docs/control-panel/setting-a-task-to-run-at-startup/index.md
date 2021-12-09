@@ -7,7 +7,7 @@ date: "2016-02-02"
 
 ## Overview
 
-Services or scripts may be set to run upon server start within the [control panel]({{ $page->baseUrl }}/control-panel/logging-into-the-control-panel/) or via [crontab(5)](https://apiscp.com/linux-man/man5/crontab.5.html) from the [terminal]({{ $page->baseUrl }}/terminal/accessing-terminal/). Either solution requires task scheduling support, which is found on [Developer+](https://apiscp.com/hosting) packages.
+Services or scripts may be set to run upon server start within the [control panel](/docs/control-panel/logging-into-the-control-panel/) or via [crontab(5)](https://apiscp.com/linux-man/man5/crontab.5.html) from the [terminal](/docs/terminal/accessing-terminal/). Either solution requires task scheduling support, which is found on [Developer+](https://apiscp.com/hosting) packages.
 
 ### Within the control panel
 

@@ -7,13 +7,13 @@ date: "2015-01-06"
 
 ## Overview
 
-Newer [hosting platforms]({{ $page->baseUrl }}/platform/determining-platform-version/ "Determining platform version"), v6+, support multiple Ruby versions through [rvm](http://www.rvm.io). This enables you to run multiple versions of Rack and Rails using any available Ruby interpreters. Currently, versions 1.8 to 2.2 are supported.
+Newer [hosting platforms](/docs/platform/determining-platform-version/ "Determining platform version"), v6+, support multiple Ruby versions through [rvm](http://www.rvm.io). This enables you to run multiple versions of Rack and Rails using any available Ruby interpreters. Currently, versions 1.8 to 2.2 are supported.
 
 **Important:** Avoid using 1.8, except to shim an older application with an intent to upgrade. 1.8 is [deprecated](https://www.ruby-lang.org/en/news/2011/10/06/plans-for-1-8-7/) and contains several unpatched security vulnerabilities as of June 2013.
 
 ## Switching versions
 
-Important: all commands are done from the [terminal]({{ $page->baseUrl }}/terminal/accessing-terminal/ "Accessing terminal").
+Important: all commands are done from the [terminal](/docs/terminal/accessing-terminal/ "Accessing terminal").
 
 ### Listing available versions
 
@@ -63,4 +63,4 @@ ruby -v
 
 ## See also
 
-- KB: [Setting up Rails with Passenger]({{ $page->baseUrl }}/ruby/setting-rails-passenger/)
+- KB: [Setting up Rails with Passenger](/docs/ruby/setting-rails-passenger/)

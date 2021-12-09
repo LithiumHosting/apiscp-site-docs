@@ -15,4 +15,4 @@ Effective April 9, 2016, all inbound file uploads are [scanned](https://twitter.
 
 ## Workarounds
 
-False positives may exist; however, you are strongly urged to verify the integrity of the file by running it through an anti-virus on your machine or through [VirusTotal](https://www.virustotal.com/)'s free, online service. If the file comes back negative, open a ticket in the [control panel]({{ $page->baseUrl }}/control-panel/logging-into-the-control-panel/) with the attached specimen for further evaluation.
+False positives may exist; however, you are strongly urged to verify the integrity of the file by running it through an anti-virus on your machine or through [VirusTotal](https://www.virustotal.com/)'s free, online service. If the file comes back negative, open a ticket in the [control panel](/docs/control-panel/logging-into-the-control-panel/) with the attached specimen for further evaluation.

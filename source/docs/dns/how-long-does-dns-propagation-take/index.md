@@ -7,7 +7,7 @@ date: "2014-10-28"
 
 DNS propagation may take anywhere from 15 minutes to 24 hours. In rare circumstances, propagation may take longer.
 
-Propagation begins once the [nameserver]({{ $page->baseUrl }}/dns/nameserver-settings/ "Nameserver Settings") settings are changed through the domain registrar, which is the company through which you purchased your domain name.
+Propagation begins once the [nameserver](/docs/dns/nameserver-settings/ "Nameserver Settings") settings are changed through the domain registrar, which is the company through which you purchased your domain name.
 
 ## Explanation
 
@@ -21,4 +21,4 @@ For this reason, it is advisable to only reduce TTL to under 43200 (12 hours) if
 
 ## See also
 
-- KB: [How does DNS work?]({{ $page->baseUrl }}/dns/dns-work/)
+- KB: [How does DNS work?](/docs/dns/dns-work/)

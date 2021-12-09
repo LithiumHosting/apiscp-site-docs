@@ -18,7 +18,7 @@ This is caused by mistakenly referencing a path within a pivot root inconsistent
 
 ## Solution
 
-Prepend the _HTTP Base Prefix_ value taken from the [control panel]({{ $page->baseUrl }}/control-panel/logging-into-the-control-panel/ "Logging into the control panel") under **Account** > **Summary** > **Web**. For example, the following PHP snippet would be corrected as follows:
+Prepend the _HTTP Base Prefix_ value taken from the [control panel](/docs/control-panel/logging-into-the-control-panel/ "Logging into the control panel") under **Account** > **Summary** > **Web**. For example, the following PHP snippet would be corrected as follows:
 
 <?php
    // INCORRECT
@@ -35,8 +35,8 @@ For convenience, the web server will populate an environment variable named `SIT
    // do whatever, $key works!
 ?>
 
-Just don't forget too that PHP requires [special permissions]({{ $page->baseUrl }}/php/writing-to-files/ "Writing to files") for write access!
+Just don't forget too that PHP requires [special permissions](/docs/php/writing-to-files/ "Writing to files") for write access!
 
 ## See Also
 
-PHP: [Writing to files]({{ $page->baseUrl }}/php/writing-to-files/ "Writing to files")
+PHP: [Writing to files](/docs/php/writing-to-files/ "Writing to files")

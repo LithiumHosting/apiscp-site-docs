@@ -9,7 +9,7 @@ date: "2017-05-24"
 
 ## Getting Started
 
-Installation is done within the [Terminal]({{ $page->baseUrl }}/terminal/accessing-terminal/).
+Installation is done within the [Terminal](/docs/terminal/accessing-terminal/).
 
 1. Checkout the Discourse repository from [GitHub](https://github.com/discourse/discourse) into /var/www
     
@@ -17,7 +17,7 @@ Installation is done within the [Terminal]({{ $page->baseUrl }}/terminal/accessi
     git clone https://github.com/discourse/discourse.git
     cd discourse
     
-2. Verify the Ruby interpreter is at least 2.3.1. [Switch interpreters]({{ $page->baseUrl }}/ruby/changing-ruby-versions/) if not.
+2. Verify the Ruby interpreter is at least 2.3.1. [Switch interpreters](/docs/ruby/changing-ruby-versions/) if not.
     
     rvm list
     # Look that at least ruby-2.3.1 is the current interpreter
@@ -32,11 +32,11 @@ Installation is done within the [Terminal]({{ $page->baseUrl }}/terminal/accessi
     gem install bundle
     bundle install
     
-    - **Note:** depending upon platform, the build process will fail on the pg gem. Set the pg build configuration, then rerun `bundle install` to continue installation ([v7]({{ $page->baseUrl }}/platform/determining-platform-version/) uses PostgreSQL 9.6, v6.5 9.4, and v6 9.1):
+    - **Note:** depending upon platform, the build process will fail on the pg gem. Set the pg build configuration, then rerun `bundle install` to continue installation ([v7](/docs/platform/determining-platform-version/) uses PostgreSQL 9.6, v6.5 9.4, and v6 9.1):
         
         bundle config build.pg --with-pg-config=/usr/pgsql-9.6/bin/pg\_config
         
-4. Setup [Redis]({{ $page->baseUrl }}/guides/running-redis/)
+4. Setup [Redis](/docs/guides/running-redis/)
 5. Create a PostgreSQL database (**Databases** > **PostgreSQL Manager**). Be sure to bump the user designated to connect to the database from the system default 5 to _15 concurrent connections_. Discourse pools its connections and requires a higher allowance.
 6. Create a new user to relay email for Discourse via **User** > **Add User**. Ensure that the user has email privileges (incoming, outgoing) enabled.
 7. Copy `config/discourse_defaults.conf` to `config/discourse.conf`, this will provide application-specific overrides
@@ -49,7 +49,7 @@ Installation is done within the [Terminal]({{ $page->baseUrl }}/terminal/accessi
     
     RAILS\_ENV=production bundle exec rake db:migrate
     
-    - Migration will fail requiring the hstore, pg\_trgm extensions. Open a ticket in the panel to request hstore and pg\_trgm to be added to your PostgreSQL database (also include the database name). Alternatively, use [Beacon]({{ $page->baseUrl }}/control-panel/scripting-with-beacon/) to call [sql\_add\_pgsql\_extension](http://docs.apiscp.com/class-Sql_Module.html#_add_pgsql_extension). Both "pg\_trgm" and "hstore" are supported.
+    - Migration will fail requiring the hstore, pg\_trgm extensions. Open a ticket in the panel to request hstore and pg\_trgm to be added to your PostgreSQL database (also include the database name). Alternatively, use [Beacon](/docs/control-panel/scripting-with-beacon/) to call [sql\_add\_pgsql\_extension](http://docs.apiscp.com/class-Sql_Module.html#_add_pgsql_extension). Both "pg\_trgm" and "hstore" are supported.
 10. Precompile assets:
     
     RAILS\_ENV=production bundle exec rake assets:precompile
@@ -71,11 +71,11 @@ Installation is done within the [Terminal]({{ $page->baseUrl }}/terminal/accessi
     gem install --no-rdoc --no-ri passenger
     passenger-config --ruby-command
     
-    - Add `RailsEnv production` to your [.htaccess]({{ $page->baseUrl }}/guides/htaccess-guide/) control under `public/`
-    - Add [PassengerRuby]({{ $page->baseUrl }}/ruby/setting-rails-passenger/) directive to your [.htaccess]({{ $page->baseUrl }}/guides/htaccess-guide/) control under `public/`, e.g. `PassengerRuby /home/apnscp/.rvm/gems/ruby-2.4.0/wrappers/ruby`
-15. Lastly, connect `discourse/public` to a [subdomain]({{ $page->baseUrl }}/web-content/creating-subdomain/) or addon domain.
+    - Add `RailsEnv production` to your [.htaccess](/docs/guides/htaccess-guide/) control under `public/`
+    - Add [PassengerRuby](/docs/ruby/setting-rails-passenger/) directive to your [.htaccess](/docs/guides/htaccess-guide/) control under `public/`, e.g. `PassengerRuby /home/apnscp/.rvm/gems/ruby-2.4.0/wrappers/ruby`
+15. Lastly, connect `discourse/public` to a [subdomain](/docs/web-content/creating-subdomain/) or addon domain.
     
-    \[caption id="attachment\_1471" align="aligncenter" width="300"\][![](images/add-subdomain-300x200.png)]({{ $page->baseUrl }}/wp-content/uploads/2017/05/add-subdomain.png) Connecting Discourse to a subdomain named discourse.mydomain.com\[/caption\]
+    \[caption id="attachment\_1471" align="aligncenter" width="300"\][![](images/add-subdomain-300x200.png)](/docs/wp-content/uploads/2017/05/add-subdomain.png) Connecting Discourse to a subdomain named discourse.mydomain.com\[/caption\]
 16. Visit your new Discourse forum. Register using your email address specified in `developer_emails`. A confirmation email will be sent if all is configured correct (smtp\* settings) and Sidekiq is running. Click the link and follow the setup instructions!**Note:** adding a CDN in the following section is highly recommended
 
 ## Adding CDN
@@ -102,8 +102,8 @@ Given Discourse runs on _discourse.mydomain.com_ and the CDN will be called _cdn
     - Enter the **CloudFront Domain Name** as your parameter.
     - Click **Add**
         
-        \[caption id="attachment\_1478" align="aligncenter" width="300"\][![](images/domain-name-300x171.png)]({{ $page->baseUrl }}/wp-content/uploads/2017/05/domain-name.png) CloudFront domain field\[/caption\]
+        \[caption id="attachment\_1478" align="aligncenter" width="300"\][![](images/domain-name-300x171.png)](/docs/wp-content/uploads/2017/05/domain-name.png) CloudFront domain field\[/caption\]
 - Edit `config/discourse.conf`. Change **cdn\_url**
-- [Restart Discourse]({{ $page->baseUrl }}/ruby/restarting-passenger-processes/)
+- [Restart Discourse](/docs/ruby/restarting-passenger-processes/)
     
     touch tmp/restart.txt

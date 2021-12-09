@@ -15,13 +15,13 @@ date: "2015-01-26"
     - e.g. `http://example.com/wp-admin` if the domain is `example.com`
 2. Navigate to **Plugins** > **Add New**
     
-    \[caption id="attachment\_567" align="alignnone" width="300"\][!["Add New" location underneath Plugins](images/wordpress-plugin-location-300x143.png)]({{ $page->baseUrl }}/wp-content/uploads/2015/01/wordpress-plugin-location.png) "Add New" location underneath Plugins\[/caption\]
+    \[caption id="attachment\_567" align="alignnone" width="300"\][!["Add New" location underneath Plugins](images/wordpress-plugin-location-300x143.png)](/docs/wp-content/uploads/2015/01/wordpress-plugin-location.png) "Add New" location underneath Plugins\[/caption\]
 3. Within the Search bar, enter _W3 Total Cache_
 4. Click **Install Now**
-5. Enter your FTP password or [login information]({{ $page->baseUrl }}/ftp/accessing-ftp-server/ "Accessing FTP server") to install the plugin securely through FTP
+5. Enter your FTP password or [login information](/docs/ftp/accessing-ftp-server/ "Accessing FTP server") to install the plugin securely through FTP
     - Specify `localhost` for **Hostname**
         - Traffic will stay local on the server adding an extra layer of privacy
-    - Need to [reset your password?]({{ $page->baseUrl }}/control-panel/resetting-your-password/ "Resetting your password")
+    - Need to [reset your password?](/docs/control-panel/resetting-your-password/ "Resetting your password")
 6. Click **Activate** once installed to activate this plugin
 
 ## Configuring
@@ -30,12 +30,12 @@ date: "2015-01-26"
 
 1. Under **Performance** > **General Settings** > **Import/Export**, select **Import configuration**.
 2. Extract `w3-settings.php` from the attached zip file, select this file.
-    - [Download w3-settings.zip]({{ $page->baseUrl }}/wp-content/uploads/2015/01/w3-settings.zip) (sha256: `cce8cbc6a210a8cbde05b86d3b252a930f0396877eb4b6727ec1939fe5d202f0`)
+    - [Download w3-settings.zip](/docs/wp-content/uploads/2015/01/w3-settings.zip) (sha256: `cce8cbc6a210a8cbde05b86d3b252a930f0396877eb4b6727ec1939fe5d202f0`)
     - Note: minification is enabled for logged-in users. If making changes to your theme, disable this feature via **General Settings** > **Minify** > Disable for logged in users **enable**.
 3. Click **Upload**
 4. Upon success, "_Settings successfully uploaded_" will appear up top confirming install success.
     
-    \[caption id="attachment\_569" align="alignnone" width="300"\][![W3 Total Cache import success confirmation dialog.](images/w3-import-success-300x55.png)]({{ $page->baseUrl }}/wp-content/uploads/2015/01/w3-import-success.png) W3 Total Cache import success confirmation dialog.\[/caption\]
+    \[caption id="attachment\_569" align="alignnone" width="300"\][![W3 Total Cache import success confirmation dialog.](images/w3-import-success-300x55.png)](/docs/wp-content/uploads/2015/01/w3-import-success.png) W3 Total Cache import success confirmation dialog.\[/caption\]
 
 ### Manual
 
@@ -67,7 +67,7 @@ Disk cache is preferred over APC/OPCache, because whenever the HTTP server is re
 
 An analysis from [webpagetest.org](http://webpagetest.org) illustrates the performance gains before and after using W3 Total Cache. First byte time is reduced (processing the request) + number of requests has been reduced as well. A post processes 36% faster, and the page loads external assets (CSS/JS) 3.7% faster. With more plugins, the performance gains become greater when W3 Total Cache is activated.
 
-\[caption id="attachment\_570" align="aligncenter" width="640"\][![Page loads before and after caching on kb.apiscp.com.](images/caching-before-and-after-1024x540.png)]({{ $page->baseUrl }}/wp-content/uploads/2015/01/caching-before-and-after.png) Page loads before and after caching on kb.apiscp.com.\[/caption\]
+\[caption id="attachment\_570" align="aligncenter" width="640"\][![Page loads before and after caching on kb.apiscp.com.](images/caching-before-and-after-1024x540.png)](/docs/wp-content/uploads/2015/01/caching-before-and-after.png) Page loads before and after caching on kb.apiscp.com.\[/caption\]
 
 ## See also
 

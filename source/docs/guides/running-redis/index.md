@@ -7,17 +7,17 @@ date: "2015-01-13"
 
 ## Overview
 
-[Redis](http://redis.io/) is an advanced key-value cache and store, similar to memcached with [better performance](http://redis.io/topics/benchmarks). It is available on [newer platforms]({{ $page->baseUrl }}/platform/determining-platform-version/ "Determining platform version") (v6+) without any [additional compilation]({{ $page->baseUrl }}/terminal/compiling-programs/ "Compiling programs") from source. Accounts [with terminal access]({{ $page->baseUrl }}/terminal/is-terminal-access-available/ "Is terminal access available?") are eligible to use Redis.
+[Redis](http://redis.io/) is an advanced key-value cache and store, similar to memcached with [better performance](http://redis.io/topics/benchmarks). It is available on [newer platforms](/docs/platform/determining-platform-version/ "Determining platform version") (v6+) without any [additional compilation](/docs/terminal/compiling-programs/ "Compiling programs") from source. Accounts [with terminal access](/docs/terminal/is-terminal-access-available/ "Is terminal access available?") are eligible to use Redis.
 
 ## Quickstart
 
-From the [terminal]({{ $page->baseUrl }}/terminal/accessing-terminal/ "Accessing terminal"), run: `redis-server --bind 127.0.0.1 --port PORT` where PORT is a [preassigned port]({{ $page->baseUrl }}/terminal/listening-ports/ "Listening on ports") to the account.
+From the [terminal](/docs/terminal/accessing-terminal/ "Accessing terminal"), run: `redis-server --bind 127.0.0.1 --port PORT` where PORT is a [preassigned port](/docs/terminal/listening-ports/ "Listening on ports") to the account.
 
-**Note:** use 127.0.0.1 to prevent outside network activity. 127.0.0.1 will only allow traffic that originates from the same server. A better solution, if using CGI or a [Rails]({{ $page->baseUrl }}/ruby/setting-rails-passenger/ "Setting up Rails with Passenger") application, is to specify ---`unixsocket /tmp/redis.sock` instead of `--bind`/`--port` to specify a local UNIX domain socket instead of a TCP socket.
+**Note:** use 127.0.0.1 to prevent outside network activity. 127.0.0.1 will only allow traffic that originates from the same server. A better solution, if using CGI or a [Rails](/docs/ruby/setting-rails-passenger/ "Setting up Rails with Passenger") application, is to specify ---`unixsocket /tmp/redis.sock` instead of `--bind`/`--port` to specify a local UNIX domain socket instead of a TCP socket.
 
 ## Configuring & Daemonizing
 
-Now with Redis up and running, you can create a long-term solution that starts up with the server and always runs in the background. Start with either the [stock configuration](http://download.redis.io/redis-stable/redis.conf) or just copy and paste, making sure to update the `port` parameter to a [port assigned]({{ $page->baseUrl }}/terminal/listening-ports/ "Listening on ports") to your account.
+Now with Redis up and running, you can create a long-term solution that starts up with the server and always runs in the background. Start with either the [stock configuration](http://download.redis.io/redis-stable/redis.conf) or just copy and paste, making sure to update the `port` parameter to a [port assigned](/docs/terminal/listening-ports/ "Listening on ports") to your account.
 
 > **Note**: as with most configuration files, any line that begins with a octothorpe/pound/hash symbol (#) denotes a comment. These are never interpreted by an application, but serve as guidance. The following configuration omits these helpful comments for brevity.
 
@@ -60,7 +60,7 @@ Now to start Redis using the configuration, type: `redis-server ~/redis.conf`
 
 ### Starting on Start-up
 
-1. Visit **Dev** > **Task Scheduler** within the [control panel]({{ $page->baseUrl }}/control-panel/logging-into-the-control-panel/ "Logging into the control panel") to schedule a new task.
+1. Visit **Dev** > **Task Scheduler** within the [control panel](/docs/control-panel/logging-into-the-control-panel/ "Logging into the control panel") to schedule a new task.
 2. Under **Command**, enter `redis-server ~/redis.conf`
 3. Under _Scheduling_, select **Server Start**
 4. Click **Add**

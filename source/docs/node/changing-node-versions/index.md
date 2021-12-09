@@ -7,13 +7,13 @@ date: "2016-01-27"
 
 ## Overview
 
-Platforms [v6.5+]({{ $page->baseUrl }}/platform/determining-platform-version/) and beyond support multiple Node versions that may be installed using [nvm](https://github.com/creationix/nvm).
+Platforms [v6.5+](/docs/platform/determining-platform-version/) and beyond support multiple Node versions that may be installed using [nvm](https://github.com/creationix/nvm).
 
 ## Usage
 
 ### Listing
 
-nvm is provided automatically. First, to list available node interpreters, execute `nvm ls` from the [terminal]({{ $page->baseUrl }}/terminal/accessing-terminal/):
+nvm is provided automatically. First, to list available node interpreters, execute `nvm ls` from the [terminal](/docs/terminal/accessing-terminal/):
 
 ```
 $ nvm ls
@@ -60,9 +60,9 @@ Once you have settled on a Node interpreter, the absolute path may be discovered
 $ which node
 ~/.nvm/versions/node/v5.4.1/bin/node
 
-Be sure to expand ~ to your [home directory]({{ $page->baseUrl }}/platform/home-directory-location/). This location be used with [Passenger]({{ $page->baseUrl }}/guides/running-node-js/) via `PassengerNodejs` to use a different Node, other than the system default, to handle requests.
+Be sure to expand ~ to your [home directory](/docs/platform/home-directory-location/). This location be used with [Passenger](/docs/guides/running-node-js/) via `PassengerNodejs` to use a different Node, other than the system default, to handle requests.
 
 ## See also
 
 - [nvm documentation](https://github.com/creationix/nvm/blob/master/README.markdown) (github.org)
-- KB: [Running Node.js]({{ $page->baseUrl }}/guides/running-node-js/)
+- KB: [Running Node.js](/docs/guides/running-node-js/)

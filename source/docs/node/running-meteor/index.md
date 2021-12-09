@@ -7,12 +7,12 @@ date: "2015-02-27"
 
 ## Overview
 
-[Meteor](https://www.meteor.com/) is a web framework written on top of Node.js. Meteor hooks into [Passenger](https://www.phusionpassenger.com/) for seamless process launching and flexible, agile scalability. Meteor requires [terminal access]({{ $page->baseUrl }}/terminal/is-terminal-access-available/ "Is terminal access available?") to use. This guide covers launching Meteor on a [v6+ platform]({{ $page->baseUrl }}/platform/determining-platform-version/ "Determining platform version").
+[Meteor](https://www.meteor.com/) is a web framework written on top of Node.js. Meteor hooks into [Passenger](https://www.phusionpassenger.com/) for seamless process launching and flexible, agile scalability. Meteor requires [terminal access](/docs/terminal/is-terminal-access-available/ "Is terminal access available?") to use. This guide covers launching Meteor on a [v6+ platform](/docs/platform/determining-platform-version/ "Determining platform version").
 
 ## Quickstart
 
-1. PREREQUISITE: follow the [MongoDB tutorial]({{ $page->baseUrl }}/guides/running-mongodb/ "Running MongoDB") to setup MongoDB.
-2. Install Meteor from the [terminal]({{ $page->baseUrl }}/terminal/accessing-terminal/ "Accessing terminal"):
+1. PREREQUISITE: follow the [MongoDB tutorial](/docs/guides/running-mongodb/ "Running MongoDB") to setup MongoDB.
+2. Install Meteor from the [terminal](/docs/terminal/accessing-terminal/ "Accessing terminal"):
     - cd ~
         curl https://install.meteor.com/ | sh
         
@@ -32,10 +32,10 @@ date: "2015-02-27"
     - cd /var/www
         meteor create meteorapp
         
-4. Next, connect `public/` to a [subdomain]({{ $page->baseUrl }}/web-content/creating-subdomain/ "Creating a subdomain") within the [control panel]({{ $page->baseUrl }}/control-panel/logging-into-the-control-panel/ "Logging into the control panel") via **Web** > ****Subdomains****
+4. Next, connect `public/` to a [subdomain](/docs/web-content/creating-subdomain/ "Creating a subdomain") within the [control panel](/docs/control-panel/logging-into-the-control-panel/ "Logging into the control panel") via **Web** > ****Subdomains****
     
-    \[caption id="attachment\_758" align="alignnone" width="300"\][![Connecting Meteor to a subdomain in the control panel](images/meteor-subdomain-control-panel-300x67.png)]({{ $page->baseUrl }}/wp-content/uploads/2015/02/meteor-subdomain-control-panel.png) Connecting Meteor to a subdomain in the control panel\[/caption\]
-5. Now for the most difficult and daring step: adding 6 directives and substituting variables! Meteor requires a few environment variables to run reliably. These variables are handed off from Apache to Passenger and passed onto Meteor. You will need to know your [home directory]({{ $page->baseUrl }}/platform/home-directory-location/ "Home directory location"), because this location stores a few additional Meteor system files. Create a [.htaccess]({{ $page->baseUrl }}/guides/htaccess-guide/ ".htaccess Guide") control file in `public/`
+    \[caption id="attachment\_758" align="alignnone" width="300"\][![Connecting Meteor to a subdomain in the control panel](images/meteor-subdomain-control-panel-300x67.png)](/docs/wp-content/uploads/2015/02/meteor-subdomain-control-panel.png) Connecting Meteor to a subdomain in the control panel\[/caption\]
+5. Now for the most difficult and daring step: adding 6 directives and substituting variables! Meteor requires a few environment variables to run reliably. These variables are handed off from Apache to Passenger and passed onto Meteor. You will need to know your [home directory](/docs/platform/home-directory-location/ "Home directory location"), because this location stores a few additional Meteor system files. Create a [.htaccess](/docs/guides/htaccess-guide/ ".htaccess Guide") control file in `public/`
     - PassengerNodejs /usr/bin/node
         PassengerStickySessions On
         SetEnv HOME /home/<USERNAME>
@@ -49,13 +49,13 @@ date: "2015-02-27"
 6. Access your Meteor install through the web site. The first request will take several seconds to initialize and connect to the database. Once initialized, subsequent requests will be much faster (and have a 95% chance of vaporizing from exceeding terminal velocity).
 7. __**Enjoy!**__
     
-    \[caption id="attachment\_759" align="alignnone" width="300"\][![Meteor confirmation page on a basic install](images/meteor-confirmation-dialog-300x181.png)]({{ $page->baseUrl }}/wp-content/uploads/2015/02/meteor-confirmation-dialog.png) Meteor confirmation page after installation\[/caption\]
+    \[caption id="attachment\_759" align="alignnone" width="300"\][![Meteor confirmation page on a basic install](images/meteor-confirmation-dialog-300x181.png)](/docs/wp-content/uploads/2015/02/meteor-confirmation-dialog.png) Meteor confirmation page after installation\[/caption\]
 
 ## Odds and Ends
 
 ### Restarting
 
-Meteor piggybacks Passenger, and in doing so, can be easily restarted using the `tmp/` control directory. Follow the general [guide to restarting]({{ $page->baseUrl }}/ruby/restarting-passenger-processes/ "Restarting Passenger processes") a Passenger-backed application.
+Meteor piggybacks Passenger, and in doing so, can be easily restarted using the `tmp/` control directory. Follow the general [guide to restarting](/docs/ruby/restarting-passenger-processes/ "Restarting Passenger processes") a Passenger-backed application.
 
 ## See also
 

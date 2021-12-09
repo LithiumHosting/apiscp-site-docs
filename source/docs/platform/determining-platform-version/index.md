@@ -21,7 +21,7 @@ Certain platforms come with release announcements providing an overview of featu
 
 ## Platform Migration
 
-If you're on an older platform, simply open a ticket within the control panel to request a [platform migration]({{ $page->baseUrl }}/platform/migrating-another-server/). Migrations are automated, take 24 hours to complete and have zero-impact on your day-to-day operations, so long as you continue to use our [nameservers]({{ $page->baseUrl }}/dns/nameserver-settings/).
+If you're on an older platform, simply open a ticket within the control panel to request a [platform migration](/docs/platform/migrating-another-server/). Migrations are automated, take 24 hours to complete and have zero-impact on your day-to-day operations, so long as you continue to use our [nameservers](/docs/dns/nameserver-settings/).
 
 ## EOL Platforms
 

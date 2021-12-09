@@ -39,4 +39,4 @@ Given that information, perform these steps within the **DNS Manager** :
 
 ## See also
 
-- KB: [How does DNS work?]({{ $page->baseUrl }}/dns/dns-work/ "How does DNS work?")
+- KB: [How does DNS work?](/docs/dns/dns-work/ "How does DNS work?")

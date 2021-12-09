@@ -7,7 +7,7 @@ date: "2014-10-31"
 
 ## Overview
 
-Often times when switching hosting companies we would like to see what your domain name looks like before finalizing DNS changes by [changing nameservers]({{ $page->baseUrl }}/dns/nameserver-settings/ "Nameserver Settings"). Overriding DNS is done through a [HOSTS](http://en.wikipedia.org/wiki/Hosts_file) file. Any entry in a HOSTS file overrides any other DNS setting that is resolved by a nameserver.
+Often times when switching hosting companies we would like to see what your domain name looks like before finalizing DNS changes by [changing nameservers](/docs/dns/nameserver-settings/ "Nameserver Settings"). Overriding DNS is done through a [HOSTS](http://en.wikipedia.org/wiki/Hosts_file) file. Any entry in a HOSTS file overrides any other DNS setting that is resolved by a nameserver.
 
 ## Making Adjustments
 
@@ -23,7 +23,7 @@ Visit http://apiscp.com to access apiscp.com on the server with an IP address 64
 
 ### Microsoft Windows Vista, Windows 7+
 
-Click on Start menu. Browse to **All Programs** > **Accessories**. Right-click on Notepad and select **Run As Administrator**. If a UAC prompt appears, allow the application to be run as administrator. Go to **File **\> **Open**. Enter `%SystemRoot%\system32\drivers\etc\hosts`. \[caption id="attachment\_93" align="alignnone" width="300"\][![Sample hosts file from Windows](images/Hosts-windows-300x272.png)]({{ $page->baseUrl }}/wp-content/uploads/2014/10/Hosts-windows.png) Sample hosts file from Windows\[/caption\]
+Click on Start menu. Browse to **All Programs** > **Accessories**. Right-click on Notepad and select **Run As Administrator**. If a UAC prompt appears, allow the application to be run as administrator. Go to **File **\> **Open**. Enter `%SystemRoot%\system32\drivers\etc\hosts`. \[caption id="attachment\_93" align="alignnone" width="300"\][![Sample hosts file from Windows](images/Hosts-windows-300x272.png)](/docs/wp-content/uploads/2014/10/Hosts-windows.png) Sample hosts file from Windows\[/caption\]
 
 DNS will be updated once the file has been saved and Notepad closed.
 

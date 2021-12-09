@@ -19,7 +19,7 @@ echo 'PATH=$PATH:./node\_modules/.bin:../node\_modules/.bin' >> ~/.bash\_profile
 
 Log out of the terminal and log back in.
 
-**_Notes: _**it is acceptable to omit ../node\_modules/.bin from the path. This is used for situations like [Sails]({{ $page->baseUrl }}/node/sails-quickstart/) that create a separate directory for its application.
+**_Notes: _**it is acceptable to omit ../node\_modules/.bin from the path. This is used for situations like [Sails](/docs/node/sails-quickstart/) that create a separate directory for its application.
 
 ## See also
 

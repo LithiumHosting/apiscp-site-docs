@@ -7,11 +7,11 @@ date: "2015-01-20"
 
 ## Overview
 
-Python uses a package management system called "[pip](https://pypi.python.org/pypi/pip)". Package management is available on newer hosting platforms [v4.5]({{ $page->baseUrl }}/platform/determining-platform-version/ "Determining platform version") and above. [Terminal access]({{ $page->baseUrl }}/terminal/is-terminal-access-available/ "Is terminal access available?") is necessary to use the feature.
+Python uses a package management system called "[pip](https://pypi.python.org/pypi/pip)". Package management is available on newer hosting platforms [v4.5](/docs/platform/determining-platform-version/ "Determining platform version") and above. [Terminal access](/docs/terminal/is-terminal-access-available/ "Is terminal access available?") is necessary to use the feature.
 
 ## Package management
 
-All packages installed reside under /usr/local/lib/python/_<VERSION> _where _<VERSION>_ is the Python version. Python versions may be switched on-the-fly using [pyenv]({{ $page->baseUrl }}/python/changing-python-versions/ "Changing Python versions") on [v6 platforms]({{ $page->baseUrl }}/platform/determining-platform-version/ "Determining platform version").
+All packages installed reside under /usr/local/lib/python/_<VERSION> _where _<VERSION>_ is the Python version. Python versions may be switched on-the-fly using [pyenv](/docs/python/changing-python-versions/ "Changing Python versions") on [v6 platforms](/docs/platform/determining-platform-version/ "Determining platform version").
 
 **Important platform info: **all commands listed here use `pip`. On older platforms, _pre-v6_, use `pip-python` instead of `pip` to install packages. Syntax remains otherwise the same.
 
@@ -23,7 +23,7 @@ To install Django: `pip install django`
 
 `` `[myuser@sol ~]$ pip install django Downloading/unpacking django Running setup.py egg_info for package django` ``warning: no previously-included files matching '\_\_pycache\_\_' found under directory '\*' warning: no previously-included files matching '\*.py\[co\]' found under directory '\*' Installing collected packages: django Running setup.py install for djangowarning: no previously-included files matching '\_\_pycache\_\_' found under directory '\*' warning: no previously-included files matching '\*.py\[co\]' found under directory '\*' changing mode of /usr/local/bin/django-admin.py to 775 Installing django-admin script to /usr/local/bin Successfully installed django Cleaning up...
 
-To install a Python 2.6+ package to your [home directory]({{ $page->baseUrl }}/platform/home-directory-location/ "Home directory location"), specify `--user`:
+To install a Python 2.6+ package to your [home directory](/docs/platform/home-directory-location/ "Home directory location"), specify `--user`:
 
 `pip install --user django`
 

@@ -7,16 +7,16 @@ date: "2015-03-18"
 
 ## Overview
 
-[Pyramid](http://www.pylonsproject.org/) is a Python framework that is the spiritual successor to Pylon and Zope, frameworks popular in the mid-to-late 2000s. Pyramid is supported with on [v6+ platforms]({{ $page->baseUrl }}/platform/determining-platform-version/ "Determining platform version") using [any Python version]({{ $page->baseUrl }}/python/changing-python-versions/ "Changing Python versions") from 2.7 onward with [Passenger]({{ $page->baseUrl }}/cgi-passenger/passenger-supported-apps/ "Passenger-supported apps").
+[Pyramid](http://www.pylonsproject.org/) is a Python framework that is the spiritual successor to Pylon and Zope, frameworks popular in the mid-to-late 2000s. Pyramid is supported with on [v6+ platforms](/docs/platform/determining-platform-version/ "Determining platform version") using [any Python version](/docs/python/changing-python-versions/ "Changing Python versions") from 2.7 onward with [Passenger](/docs/cgi-passenger/passenger-supported-apps/ "Passenger-supported apps").
 
 ## Quickstart
 
-All commands are done from the [terminal]({{ $page->baseUrl }}/terminal/accessing-terminal/ "Accessing terminal") for convenience.
+All commands are done from the [terminal](/docs/terminal/accessing-terminal/ "Accessing terminal") for convenience.
 
-1. **PREREQUISITE**: create a suitable [Passenger-compatible]({{ $page->baseUrl }}/cgi-passenger/passenger-application-layout/ "Passenger application layout") filesystem layout
+1. **PREREQUISITE**: create a suitable [Passenger-compatible](/docs/cgi-passenger/passenger-application-layout/ "Passenger application layout") filesystem layout
     - cd /var/www && mkdir -p pyramid/{tmp,public}
         
-2. OPTIONAL PREREQUISITE: determine a suitable Python version using [pyenv]({{ $page->baseUrl }}/python/changing-python-versions/ "Changing Python versions")
+2. OPTIONAL PREREQUISITE: determine a suitable Python version using [pyenv](/docs/python/changing-python-versions/ "Changing Python versions")
     - cd pyramid && pyenv local 3.3.5
         
 3. Install Pyramid. _In the above example, using pyenv to set 3.3.5, Pyramid will be installed as a Python 3.3.5 egg._
@@ -40,7 +40,7 @@ All commands are done from the [terminal]({{ $page->baseUrl }}/terminal/accessin
      server = make\_server('0.0.0.0', 8080, app)
      server.serve\_forever()
     
-5. Connect `public/` to a [subdomain]({{ $page->baseUrl }}/web-content/creating-subdomain/ "Creating a subdomain")
+5. Connect `public/` to a [subdomain](/docs/web-content/creating-subdomain/ "Creating a subdomain")
 6. Inform Passenger to serve this as a Python application:
     - echo "PassengerPython /.socket/python/shims/python" > public/.htaccess
         
@@ -48,11 +48,11 @@ All commands are done from the [terminal]({{ $page->baseUrl }}/terminal/accessin
 
 ### Viewing launcher errors
 
-In the event an application fails to launch, errors will be logged to `passenger.log`. See KB: [Viewing launcher errors]({{ $page->baseUrl }}/cgi-passenger/viewing-launcher-errors/ "Viewing launcher errors").
+In the event an application fails to launch, errors will be logged to `passenger.log`. See KB: [Viewing launcher errors](/docs/cgi-passenger/viewing-launcher-errors/ "Viewing launcher errors").
 
 ### Restarting
 
-Like any Passenger app, you can follow the general [Passenger guidelines]({{ $page->baseUrl }}/ruby/restarting-passenger-processes/ "Restarting Passenger processes") to restart an app.
+Like any Passenger app, you can follow the general [Passenger guidelines](/docs/ruby/restarting-passenger-processes/ "Restarting Passenger processes") to restart an app.
 
 ## See also
 

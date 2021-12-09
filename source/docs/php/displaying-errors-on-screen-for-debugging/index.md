@@ -11,7 +11,7 @@ During early development of a PHP application or to debug a problem, errors shou
 
 ## Solution
 
-Enable `display_errors` and increase verbosity in `error_reporting` [within PHP]({{ $page->baseUrl }}/php/changing-php-settings/ "Changing PHP settings"). As an example, configuration within a [.htaccess]({{ $page->baseUrl }}/guides/htaccess-guide/ ".htaccess Guide")  would be:
+Enable `display_errors` and increase verbosity in `error_reporting` [within PHP](/docs/php/changing-php-settings/ "Changing PHP settings"). As an example, configuration within a [.htaccess](/docs/guides/htaccess-guide/ ".htaccess Guide")  would be:
 
 php\_flag display\_errors On
 php\_value error\_reporting 9999999

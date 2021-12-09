@@ -24,7 +24,7 @@ EMAIL\_PASSWORD='mysmtppassword'
 DEFAULT\_FROM\_EMAIL=EMAIL\_HOST\_USER
 SERVER\_EMAIL=EMAIL\_HOST\_USER
 
-Replace `EMAIL_HOST_USER` and `EMAIL_PASSWORD` values with your correct [e-mail credentials]({{ $page->baseUrl }}/e-mail/accessing-e-mail/ "Accessing e-mail").
+Replace `EMAIL_HOST_USER` and `EMAIL_PASSWORD` values with your correct [e-mail credentials](/docs/e-mail/accessing-e-mail/ "Accessing e-mail").
 
 ## See also
 

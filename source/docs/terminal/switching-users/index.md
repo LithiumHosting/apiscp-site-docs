@@ -7,7 +7,7 @@ date: "2015-04-09"
 
 ## Overview
 
-Newer platforms, [v6+ platforms]({{ $page->baseUrl }}/platform/determining-platform-version/ "Determining platform version") specifically, permit switching users from the account user from the [terminal]({{ $page->baseUrl }}/terminal/accessing-terminal/ "Accessing terminal"). Once switched to the user, you assume the permission rights as this user, including the ability to remove files.
+Newer platforms, [v6+ platforms](/docs/platform/determining-platform-version/ "Determining platform version") specifically, permit switching users from the account user from the [terminal](/docs/terminal/accessing-terminal/ "Accessing terminal"). Once switched to the user, you assume the permission rights as this user, including the ability to remove files.
 
 ## Usage
 

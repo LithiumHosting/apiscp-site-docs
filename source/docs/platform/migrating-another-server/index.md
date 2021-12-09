@@ -7,7 +7,7 @@ date: "2015-01-20"
 
 ## Overview
 
-Some time during your stay with us, you may want to migrate to a newer, more powerful, and capable server. We periodically release [major hosting platforms]({{ $page->baseUrl }}/platform/determining-platform-version/ "Determining platform version") built off the latest [Redhat Enterprise Linux releases](http://en.wikipedia.org/wiki/Red_Hat_Enterprise_Linux). You may do so at any time within the control panel by [opening a ticket]({{ $page->baseUrl }}/control-panel/logging-into-the-control-panel/ "Logging into the control panel") under **Help** > **Trouble Tickets**.
+Some time during your stay with us, you may want to migrate to a newer, more powerful, and capable server. We periodically release [major hosting platforms](/docs/platform/determining-platform-version/ "Determining platform version") built off the latest [Redhat Enterprise Linux releases](http://en.wikipedia.org/wiki/Red_Hat_Enterprise_Linux). You may do so at any time within the control panel by [opening a ticket](/docs/control-panel/logging-into-the-control-panel/ "Logging into the control panel") under **Help** > **Trouble Tickets**.
 
 Migrations are 100% free, result in zero downtime, and take 24 hours to complete.
 
@@ -17,12 +17,12 @@ Migrations occur in 2 phases:
 
 1. **Stage One**, a preview stage in which your files are migrated to the new server:
     - account created on destination server
-        - if you run background services, the [preassigned ports]({{ $page->baseUrl }}/terminal/listening-ports/ "Listening on ports") will change. You are responsible for updating configuration files to avoid having these processes automatically killed on the new server
+        - if you run background services, the [preassigned ports](/docs/terminal/listening-ports/ "Listening on ports") will change. You are responsible for updating configuration files to avoid having these processes automatically killed on the new server
     - files, users, e-mail addresses, and databases are copied over
-    - DNS TTL is [reduced]({{ $page->baseUrl }}/dns/reducing-dns-propagation-time/ "Reducing DNS propagation time") to 60 seconds for domains that are designated our [hosting nameservers]({{ $page->baseUrl }}/dns/nameserver-settings/ "Nameserver settings"), `ns1.apiscp.com` and `ns2.apiscp.com`
+    - DNS TTL is [reduced](/docs/dns/reducing-dns-propagation-time/ "Reducing DNS propagation time") to 60 seconds for domains that are designated our [hosting nameservers](/docs/dns/nameserver-settings/ "Nameserver settings"), `ns1.apiscp.com` and `ns2.apiscp.com`
         - this change takes 24 hours to safely propagate
         - Important: for domains not hosted through ns1.apiscp.com and ns2.apiscp.com, you will be required to manually make the IP address adjustments
-    - You may [preview your domain]({{ $page->baseUrl }}/dns/previewing-your-domain/ "Previewing your domain") on the new server upon notification **Stage One** has completed.
+    - You may [preview your domain](/docs/dns/previewing-your-domain/ "Previewing your domain") on the new server upon notification **Stage One** has completed.
 2. **Stage Two** finalizes changes exactly 24 hours after **Stage One** completes:
     - files, users, e-mail addresses, and database changes since **Stage One** are committed to the new server
         - databases on new server leftover from **Stage One** are first dropped, then recreated before importing schema

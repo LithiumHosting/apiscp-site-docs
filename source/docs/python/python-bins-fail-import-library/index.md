@@ -7,7 +7,7 @@ date: "2015-02-23"
 
 ## Overview
 
-A binary (bin) file installed as part of a Python package, e.g. `django-admin` from [Django]({{ $page->baseUrl }}/python/django-quickstart/ "Django quickstart") will fail upon execution - even after successful installation via `pip` - because it cannot locate its corresponding Python library.
+A binary (bin) file installed as part of a Python package, e.g. `django-admin` from [Django](/docs/python/django-quickstart/ "Django quickstart") will fail upon execution - even after successful installation via `pip` - because it cannot locate its corresponding Python library.
 
 **Example:**
 
@@ -19,7 +19,7 @@ Traceback (most recent call last):
 
 ## Cause
 
-Bin helpers, like `django-admin`, will bootstrap itself to make it an executable shell script by injecting the interpreter used to run pip into itself on installation. [pyenv]({{ $page->baseUrl }}/python/changing-python-versions/ "Changing Python versions"), which provides support for multiple Python interpreters to coexist on an account, looks for a control file named `.python-version` file; then, if found, executes the corresponding Python interpreter. These interpreters reside under `/.socket/python/versions` _and_ it is these Python interpreters that are accidentally injected into the first line to make an executable shell script.
+Bin helpers, like `django-admin`, will bootstrap itself to make it an executable shell script by injecting the interpreter used to run pip into itself on installation. [pyenv](/docs/python/changing-python-versions/ "Changing Python versions"), which provides support for multiple Python interpreters to coexist on an account, looks for a control file named `.python-version` file; then, if found, executes the corresponding Python interpreter. These interpreters reside under `/.socket/python/versions` _and_ it is these Python interpreters that are accidentally injected into the first line to make an executable shell script.
 
 ## Solution
 

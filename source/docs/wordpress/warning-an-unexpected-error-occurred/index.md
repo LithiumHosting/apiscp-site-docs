@@ -13,11 +13,11 @@ Warning: An unexpected error occurred. Something may be wrong with WordPress.org
 
 ## Cause
 
-Older [hosting platforms]({{ $page->baseUrl }}/platform/determining-platform-version/ "Determining platform version") (v4) do not support validating SHA256 certificates.
+Older [hosting platforms](/docs/platform/determining-platform-version/ "Determining platform version") (v4) do not support validating SHA256 certificates.
 
 ## Solution
 
-Request an automatic [server migration]({{ $page->baseUrl }}/platform/migrating-another-server/ "Migrating to another server") to a newer platform that supports SHA256 certificate validation, along with a slew of other improvements. This can be done within the [control panel]({{ $page->baseUrl }}/control-panel/logging-into-the-control-panel/ "Logging into the control panel") under **Help** > **Trouble Tickets**.
+Request an automatic [server migration](/docs/platform/migrating-another-server/ "Migrating to another server") to a newer platform that supports SHA256 certificate validation, along with a slew of other improvements. This can be done within the [control panel](/docs/control-panel/logging-into-the-control-panel/ "Logging into the control panel") under **Help** > **Trouble Tickets**.
 
 ### Discouraged Quick fix
 

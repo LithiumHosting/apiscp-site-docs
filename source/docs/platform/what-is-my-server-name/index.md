@@ -25,4 +25,4 @@ Your server name is the server on which you are hosted. Your server name can be 
 
  
 
-\[caption id="attachment\_141" align="alignnone" width="300"\][![Control panel login location via apiscp.com](images/cp-login-location-300x48.png)]({{ $page->baseUrl }}/wp-content/uploads/2014/11/cp-login-location.png) Control panel login location via apiscp.com\[/caption\]
+\[caption id="attachment\_141" align="alignnone" width="300"\][![Control panel login location via apiscp.com](images/cp-login-location-300x48.png)](/docs/wp-content/uploads/2014/11/cp-login-location.png) Control panel login location via apiscp.com\[/caption\]

@@ -7,18 +7,18 @@ date: "2015-09-01"
 
 ## Overview
 
-WordPress periodically deploys updates to secure flaws within its code or provide general enhancements. These updates are rolled out in the form of releases that, as of WordPress 3.7, can occur in the [background automatically](https://codex.wordpress.org/Configuring_Automatic_Background_Updates) without requiring user intervention. If permissions prohibit, WordPress cannot perform an automatic update and require user intervention to [manually update]({{ $page->baseUrl }}/wordpress/updating-wordpress/).
+WordPress periodically deploys updates to secure flaws within its code or provide general enhancements. These updates are rolled out in the form of releases that, as of WordPress 3.7, can occur in the [background automatically](https://codex.wordpress.org/Configuring_Automatic_Background_Updates) without requiring user intervention. If permissions prohibit, WordPress cannot perform an automatic update and require user intervention to [manually update](/docs/wordpress/updating-wordpress/).
 
 ## Solution
 
-Edit `wp-config.php` located within the [document root]({{ $page->baseUrl }}/web-content/where-is-site-content-served-from/) of your WordPress domain or base of the subdirectory if located elsewhere under a domain. Add the following 3 lines to the end of your configuration file:
+Edit `wp-config.php` located within the [document root](/docs/web-content/where-is-site-content-served-from/) of your WordPress domain or base of the subdirectory if located elsewhere under a domain. Add the following 3 lines to the end of your configuration file:
 
 /\*\* Setup FTP Details \*\*/
 define("FTP\_HOST", "localhost");
 define("FTP\_USER", "your-ftp-username");
 define("FTP\_PASS", "your-ftp-password");
 
-Substitute, of course, _your-ftp-password_ and _your-ftp-username_ with your [FTP credentials]({{ $page->baseUrl }}/ftp/accessing-ftp-server/). FTP\_HOST should remain the same ("_localhost_").
+Substitute, of course, _your-ftp-password_ and _your-ftp-username_ with your [FTP credentials](/docs/ftp/accessing-ftp-server/). FTP\_HOST should remain the same ("_localhost_").
 
 ## Caveats/Warnings
 

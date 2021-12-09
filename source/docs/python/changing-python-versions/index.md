@@ -7,11 +7,11 @@ date: "2015-02-12"
 
 ### Overview
 
-Recent platforms ([v6+]({{ $page->baseUrl }}/platform/determining-platform-version/ "Determining platform version")) support multiple Python interpreters from the shell using [pyenv](https://github.com/yyuu/pyenv). pyenv allows seamless switching between available Python versions, and manages version-specific [package installations]({{ $page->baseUrl }}/python/installing-packages/ "Installing packages") too.
+Recent platforms ([v6+](/docs/platform/determining-platform-version/ "Determining platform version")) support multiple Python interpreters from the shell using [pyenv](https://github.com/yyuu/pyenv). pyenv allows seamless switching between available Python versions, and manages version-specific [package installations](/docs/python/installing-packages/ "Installing packages") too.
 
 ## Basics
 
-All commands are done from the [terminal]({{ $page->baseUrl }}/terminal/accessing-terminal/ "Accessing terminal").
+All commands are done from the [terminal](/docs/terminal/accessing-terminal/ "Accessing terminal").
 
 ### Listing versions
 
@@ -43,7 +43,7 @@ Control files are located under `/var/www/proj3` and `/var/www/proj2` allowing p
 
 ### Package locations
 
-Packages are installed using [pip]({{ $page->baseUrl }}/python/installing-packages/ "Installing packages") as normal. Packages are located under `/usr/local/lib/python/_<MAJOR>_._<MINOR>_._<PATCH>_` using [semantic versioning](http://www.semver.org) to avoid conflict. Any binaries installed under /usr/local/bin, however, will conflict with each other if those binaries, bundled in different versions of the package, differ. [pyenv-virtualenv](https://github.com/yyuu/pyenv-virtualenv#usage) + [virtualenv](https://virtualenv.pypa.io/en/latest/) is recommended to isolate packages of different versions that rely on the same Python interpreter.
+Packages are installed using [pip](/docs/python/installing-packages/ "Installing packages") as normal. Packages are located under `/usr/local/lib/python/_<MAJOR>_._<MINOR>_._<PATCH>_` using [semantic versioning](http://www.semver.org) to avoid conflict. Any binaries installed under /usr/local/bin, however, will conflict with each other if those binaries, bundled in different versions of the package, differ. [pyenv-virtualenv](https://github.com/yyuu/pyenv-virtualenv#usage) + [virtualenv](https://virtualenv.pypa.io/en/latest/) is recommended to isolate packages of different versions that rely on the same Python interpreter.
 
 ### Caveats
 

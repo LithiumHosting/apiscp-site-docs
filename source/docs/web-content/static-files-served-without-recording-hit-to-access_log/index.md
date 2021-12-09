@@ -7,7 +7,7 @@ date: "2018-10-23"
 
 ## Overview
 
-Static files (index.html) can be served without logging a request in [access\_log]({{ $page->baseUrl }}/web-content/accessing-page-views-and-error-messages/).
+Static files (index.html) can be served without logging a request in [access\_log](/docs/web-content/accessing-page-views-and-error-messages/).
 
 ## Cause
 
@@ -15,4 +15,4 @@ This occurs when mod\_pagespeed is enabled. Pagespeed intercepts the request hig
 
 ## Solution
 
-Disable [mod\_pagespeed]({{ $page->baseUrl }}/web-content/disabling-pagespeed). If visitor statistics are necessary, then consider utilizing [Google Analytics]({{ $page->baseUrl }}/control-panel/linking-google-analytics/) which is accessible from within apnscp.
+Disable [mod\_pagespeed](/docs/web-content/disabling-pagespeed). If visitor statistics are necessary, then consider utilizing [Google Analytics](/docs/control-panel/linking-google-analytics/) which is accessible from within apnscp.

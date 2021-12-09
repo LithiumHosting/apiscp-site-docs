@@ -7,13 +7,13 @@ date: "2015-02-13"
 
 ## Overview
 
-[Passenger](https://www.phusionpassenger.com/) provides an intelligent polyglot launcher interface for managing Node.js, [Ruby]({{ $page->baseUrl }}/ruby/setting-rails-passenger/ "Setting up Rails with Passenger"), and Python processes. This can be teamed up with [pyenv]({{ $page->baseUrl }}/python/changing-python-versions/ "Changing Python versions") to effortlessly launch multiple Python applications with a single shell command and [.htaccess]({{ $page->baseUrl }}/guides/htaccess-guide/ ".htaccess Guide") directive.
+[Passenger](https://www.phusionpassenger.com/) provides an intelligent polyglot launcher interface for managing Node.js, [Ruby](/docs/ruby/setting-rails-passenger/ "Setting up Rails with Passenger"), and Python processes. This can be teamed up with [pyenv](/docs/python/changing-python-versions/ "Changing Python versions") to effortlessly launch multiple Python applications with a single shell command and [.htaccess](/docs/guides/htaccess-guide/ ".htaccess Guide") directive.
 
 These steps are only necessary to use supplementary Python versions available on the server. If the default version works satisfactorily, then no further changes are necessary.
 
 ## Usage
 
-Applying what has been learned from KB article: "[Changing python versions]({{ $page->baseUrl }}/python/changing-python-versions/ "Changing Python versions")", create a directory structure compatible with Passenger:
+Applying what has been learned from KB article: "[Changing python versions](/docs/python/changing-python-versions/ "Changing Python versions")", create a directory structure compatible with Passenger:
 
 cd /var/www
 mkdir -p mypyapp/{public,tmp}

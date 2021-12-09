@@ -9,12 +9,12 @@ date: "2015-07-08"
 
 [Jekyll](http://jekyllrb.com) is a lightweight blogging platform written in Ruby. Jekyll compiles into a static site with no dynamic endpoints, making it extremely secure and fast. Posts are written using [Markdown](https://guides.github.com/features/mastering-markdown/) syntax.
 
-\[caption id="attachment\_1065" align="aligncenter" width="300"\][![A basic Jekyll blog](images/jekyll-default-blog-300x182.png)]({{ $page->baseUrl }}/wp-content/uploads/2015/07/jekyll-default-blog.png) A basic Jekyll blog\[/caption\]
+\[caption id="attachment\_1065" align="aligncenter" width="300"\][![A basic Jekyll blog](images/jekyll-default-blog-300x182.png)](/docs/wp-content/uploads/2015/07/jekyll-default-blog.png) A basic Jekyll blog\[/caption\]
 
 ## Quickstart
 
-1. Login to the [terminal]({{ $page->baseUrl }}/terminal/accessing-terminal/ "Accessing terminal")
-2. Select a Ruby [interpreter to use]({{ $page->baseUrl }}/ruby/changing-ruby-versions/). If you would like to use the system default version, specif `default` for the version:
+1. Login to the [terminal](/docs/terminal/accessing-terminal/ "Accessing terminal")
+2. Select a Ruby [interpreter to use](/docs/ruby/changing-ruby-versions/). If you would like to use the system default version, specif `default` for the version:
     
     ```
     rvm use default
@@ -34,13 +34,13 @@ date: "2015-07-08"
     jekyll new --force .
     
     - **Note 1: **pay attention to the presence of "`.`" after `--force`. This is not a typo.
-    - **Note 2:** although it may be a Ruby application, Jekyll compiles your site from source, creating a static site. A Passenger-compatible [filesystem layout]({{ $page->baseUrl }}/cgi-passenger/passenger-application-layout/) is, therefore, unnecessary.
-5. Compile your Jekyll website Jekyll from its source and place the files under `public/`. By default, Jekyll places output into `_site/`. We like consistency, so link `_site/` to `public/` to serve as the [document root]({{ $page->baseUrl }}/web-content/where-is-site-content-served-from/).
+    - **Note 2:** although it may be a Ruby application, Jekyll compiles your site from source, creating a static site. A Passenger-compatible [filesystem layout](/docs/cgi-passenger/passenger-application-layout/) is, therefore, unnecessary.
+5. Compile your Jekyll website Jekyll from its source and place the files under `public/`. By default, Jekyll places output into `_site/`. We like consistency, so link `_site/` to `public/` to serve as the [document root](/docs/web-content/where-is-site-content-served-from/).
     
     jekyll build
     ln -s \_site/ public
     
-6. Attach `/var/www/jekyll/public` to a [subdomain]({{ $page->baseUrl }}/web-content/creating-subdomain/) (or [addon domain]({{ $page->baseUrl }}/control-panel/creating-addon-domain/)) within the control panel.
+6. Attach `/var/www/jekyll/public` to a [subdomain](/docs/web-content/creating-subdomain/) (or [addon domain](/docs/control-panel/creating-addon-domain/)) within the control panel.
 7. Access Jekyll! You're all set!
 
 ### Live building
@@ -57,7 +57,7 @@ Configuration file: /var/www/jekyll/\_config.yml
 
 ## See also
 
-- [Jekyll running](http://jekyll.sandbox.apiscp.com) on Sol, a [v6 platform]({{ $page->baseUrl }}/platform/determining-platform-version/)
+- [Jekyll running](http://jekyll.sandbox.apiscp.com) on Sol, a [v6 platform](/docs/platform/determining-platform-version/)
 - [Jekyll resources](http://jekyllrb.com/docs/resources/)
 - [Jekyll documentation](http://jekyllrb.com/docs/frontmatter/)
 - [Jekyll help community](https://talk.jekyllrb.com/)

@@ -9,7 +9,7 @@ date: "2015-01-08"
 
 Message filtering is done prior to delivery via maildrop. Each message goes through two levels of filters: (1) global -- processed first in `/etc/maildroprc` followed by (2) local per-user filters in `$HOME/.mailfilter`. Basic filtering recipes are provided below. Syntax and usage may be found in [mailfilter(7)](http://apiscp.com/linux-man/man7/maildropfilter.7.html).
 
-**Important:** on [older platforms]({{ $page->baseUrl }}/platform/determining-platform-version/ "Determining platform version"), (less than v6), remember to always run [dos2unix](http://apiscp.com/linux-man/man1/dos2unix.1.html) or EOL conversion "Windows -> Unix" (**Files** > **File Manger** > **Properties** _action_) on the filter after making changes. maildrop will not read filter files written on Windows or Mac correctly. Consequently, mail cannot be delivered to the account until corrected.
+**Important:** on [older platforms](/docs/platform/determining-platform-version/ "Determining platform version"), (less than v6), remember to always run [dos2unix](http://apiscp.com/linux-man/man1/dos2unix.1.html) or EOL conversion "Windows -> Unix" (**Files** > **File Manger** > **Properties** _action_) on the filter after making changes. maildrop will not read filter files written on Windows or Mac correctly. Consequently, mail cannot be delivered to the account until corrected.
 
 [SpamAssassin](http://wiki.apiscp.com/index.php/SpamAssassin "SpamAssassin") is invoked from the global maildrop filter, `/etc/maildroprc`. The following block of code passes the message off to SpamAssassin if it is smaller than 128 KB.
 
@@ -47,7 +47,7 @@ if (/^X-Spam-Flag: YES/)
         }
 }
 
-**Explanation:** if the message size is smaller than 128 KB, hand it off to SpamAssassin. `DELETE_THRESHOLD` is the maximum score an e-mail may have _if and only if_ it is labeled as spam. If the score is greater or equal to `DELETE_THRESHOLD`, then the message will be deleted by being sent to `/dev/null` otherwise deliver to the Spam mailbox on the server. [This mailbox]({{ $page->baseUrl }}/e-mail/accessing-spam-folder/ "Accessing Spam folder") may be accessed through [webmail]({{ $page->baseUrl }}/e-mail/accessing-e-mail/#webmail "Accessing e-mail") or IMAP.
+**Explanation:** if the message size is smaller than 128 KB, hand it off to SpamAssassin. `DELETE_THRESHOLD` is the maximum score an e-mail may have _if and only if_ it is labeled as spam. If the score is greater or equal to `DELETE_THRESHOLD`, then the message will be deleted by being sent to `/dev/null` otherwise deliver to the Spam mailbox on the server. [This mailbox](/docs/e-mail/accessing-spam-folder/ "Accessing Spam folder") may be accessed through [webmail](/docs/e-mail/accessing-e-mail/#webmail "Accessing e-mail") or IMAP.
 
 ### Globally disabling per-user filter files
 

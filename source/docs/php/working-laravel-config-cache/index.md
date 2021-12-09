@@ -9,7 +9,7 @@ Laravel provides a static cache utility [via Artisan](https://laravel.com/docs/
 
 `php artisan config:cache`
 
-When run from [terminal]({{ $page->baseUrl }}/terminal/is-terminal-access-available/), the paths provided may be incorrectly referenced when the application is accessed from the web resulting in application errors.
+When run from [terminal](/docs/terminal/is-terminal-access-available/), the paths provided may be incorrectly referenced when the application is accessed from the web resulting in application errors.
 
 ## Solution
 

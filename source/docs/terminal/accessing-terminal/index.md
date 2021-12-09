@@ -7,7 +7,7 @@ date: "2014-11-03"
 
 ## Overview
 
-Your terminal is a command-line interface to your hosting account on the server. It provides a quick, efficient means to make permission changes, edit files, and even run services like MongoDB and node.js. Terminal access is provided with certain [qualified packages]({{ $page->baseUrl }}/terminal/is-terminal-access-available/ "Is terminal access available?").
+Your terminal is a command-line interface to your hosting account on the server. It provides a quick, efficient means to make permission changes, edit files, and even run services like MongoDB and node.js. Terminal access is provided with certain [qualified packages](/docs/terminal/is-terminal-access-available/ "Is terminal access available?").
 
 ## Logging In
 
@@ -17,7 +17,7 @@ Terminal access follows general login guidelines:
     - Alternatively, <username>#<domain> is supported
 - Password is your control panel password
 - Hostname is just your domain name
-    - If domain name has expired, use your [server name]({{ $page->baseUrl }}/platform/what-is-my-server-name/ "What is my server name?")
+    - If domain name has expired, use your [server name](/docs/platform/what-is-my-server-name/ "What is my server name?")
 
 ### Example
 
@@ -25,9 +25,9 @@ Assume your **username** is myadmin, **domain** example.com. To login using the 
 
 ### Access in the control panel
 
-Terminal access may also be accessed directly within the [control panel]({{ $page->baseUrl }}/control-panel/logging-into-the-control-panel/ "Logging into the control panel") under **Dev** > **Terminal**. Your login will be automatically filled-in. Just confirm with your password.
+Terminal access may also be accessed directly within the [control panel](/docs/control-panel/logging-into-the-control-panel/ "Logging into the control panel") under **Dev** > **Terminal**. Your login will be automatically filled-in. Just confirm with your password.
 
-\[caption id="attachment\_397" align="alignnone" width="300"\][![Terminal interface available within the control panel.](images/terminal-ex-300x174.png)]({{ $page->baseUrl }}/wp-content/uploads/2014/11/terminal-ex.png) Terminal interface available within the control panel.\[/caption\]
+\[caption id="attachment\_397" align="alignnone" width="300"\][![Terminal interface available within the control panel.](images/terminal-ex-300x174.png)](/docs/wp-content/uploads/2014/11/terminal-ex.png) Terminal interface available within the control panel.\[/caption\]
 
 ### Caveats
 

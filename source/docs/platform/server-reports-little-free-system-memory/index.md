@@ -7,7 +7,7 @@ date: "2016-05-03"
 
 ## Overview
 
-Accessing `free` from the [terminal]({{ $page->baseUrl }}/terminal/accessing-terminal/) or **Reports** > **Server Info** within the [control panel]({{ $page->baseUrl }}/control-panel/logging-into-the-control-panel/) reports a small sliver of total system memory as free or available. For example, below is the output from `free` on a [4th generation]({{ $page->baseUrl }}/platform/determining-platform-version/) server:
+Accessing `free` from the [terminal](/docs/terminal/accessing-terminal/) or **Reports** > **Server Info** within the [control panel](/docs/control-panel/logging-into-the-control-panel/) reports a small sliver of total system memory as free or available. For example, below is the output from `free` on a [4th generation](/docs/platform/determining-platform-version/) server:
 
                      total     used    free shared **buffers**   **cached**
 Mem:              16540796 13011700 3529096      0  135404 10609292

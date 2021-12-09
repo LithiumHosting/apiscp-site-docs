@@ -7,17 +7,17 @@ date: "2014-11-05"
 
 ## Overview
 
-E-mail may be accessed either through webmail within the [control panel]({{ $page->baseUrl }}/control-panel/logging-into-the-control-panel/ "Logging into the control panel") or remotely from a desktop client such as Outlook, Thunderbird, or Mail.
+E-mail may be accessed either through webmail within the [control panel](/docs/control-panel/logging-into-the-control-panel/ "Logging into the control panel") or remotely from a desktop client such as Outlook, Thunderbird, or Mail.
 
 > ### Important login information
 > 
 > Your login will always be _user_@_domain_ for e-mail. For example, if your domain is _example.com_ and your username _myadmin_, then the proper e-mail login is `myadmin@example.com` and _not_ `myadmin`. Your password is the same password that is used to log into the control panel.
 > 
-> **Warning:** 3 invalid logins in a 5 minute window will result in an automatic 10 minute blacklist. During this 10 minute window, you will not be able to access the e-mail server. This is a mechanism in place to reduce the likelihood of a successful [brute-force]({{ $page->baseUrl }}/platform/handling-a-hijacked-account/) attempt on your account.
+> **Warning:** 3 invalid logins in a 5 minute window will result in an automatic 10 minute blacklist. During this 10 minute window, you will not be able to access the e-mail server. This is a mechanism in place to reduce the likelihood of a successful [brute-force](/docs/platform/handling-a-hijacked-account/) attempt on your account.
 
 ## Accessing via webmail
 
-Webmail provides a convenient way to access e-mail from any web device. Webmail comes in 3 flavors that are accessible by different URLs and may be [changed]({{ $page->baseUrl }}/e-mail/changing-webmail-locations/ "Changing webmail locations") at any time. All of these webmail locations are also accessible within the control panel under **Mail** > **Webmail**.
+Webmail provides a convenient way to access e-mail from any web device. Webmail comes in 3 flavors that are accessible by different URLs and may be [changed](/docs/e-mail/changing-webmail-locations/ "Changing webmail locations") at any time. All of these webmail locations are also accessible within the control panel under **Mail** > **Webmail**.
 
 - Horde is accessible via http://horde._<domain>_
     - Comprehensive mail client with address book, reminders, and filtering support
@@ -38,9 +38,9 @@ Setup under [Mozilla Thunderbird](https://www.mozilla.org/en-US/thunderbird/) w
 
 1. Visit **Tools** > **Account Settings**
 2. Select **Account Actions** at the bottom
-    - [![account-actions-thunderbird](images/account-actions-thunderbird.png)]({{ $page->baseUrl }}/wp-content/uploads/2014/11/account-actions-thunderbird.png)
+    - [![account-actions-thunderbird](images/account-actions-thunderbird.png)](/docs/wp-content/uploads/2014/11/account-actions-thunderbird.png)
 3. Select **Add Mail Account**
-4. Enter _Your name_, _email address_, and _password_, which is the same as your [control panel password.]({{ $page->baseUrl }}/control-panel/resetting-your-password/ "Resetting your password")
+4. Enter _Your name_, _email address_, and _password_, which is the same as your [control panel password.](/docs/control-panel/resetting-your-password/ "Resetting your password")
 5. Autoconfigure will succeed in detecting your settings. If autoconfig fails, skip to _**MANUAL CONFIGURATION**_ below
 6. Click **Done**
 7.  A security warning may pop-up. Click **I understand the risks**, then **Done**
@@ -52,7 +52,7 @@ Setup under Microsoft Outlook will succeed automatically.
 
 1. Visit **File** > **Add Account**
 2. Ensure **E-mail Account** is selected
-3. Enter _Your name_, _e-mail address_, and _password_, which is the same as your [control panel password]({{ $page->baseUrl }}/e-mail/accessing-e-mail/ "Accessing e-mail").
+3. Enter _Your name_, _e-mail address_, and _password_, which is the same as your [control panel password](/docs/e-mail/accessing-e-mail/ "Accessing e-mail").
 4. A dialog titled, "Allow this website to configure XXX server settings?" will appear
 extends: _layouts.documentation
 section: content
@@ -61,9 +61,9 @@ section: content
 6. A password dialog will appear. Click _Save this password in your password list_
 7. Congratulations, your mail account is setup!
 
-\[caption id="attachment\_193" align="alignleft" width="300"\][![Autoconfiguration success in Thunderbird](images/autoconf-dialog-300x264.png)]({{ $page->baseUrl }}/wp-content/uploads/2014/11/autoconf-dialog.png) Autoconfiguration success in Thunderbird\[/caption\]
+\[caption id="attachment\_193" align="alignleft" width="300"\][![Autoconfiguration success in Thunderbird](images/autoconf-dialog-300x264.png)](/docs/wp-content/uploads/2014/11/autoconf-dialog.png) Autoconfiguration success in Thunderbird\[/caption\]
 
-\[caption id="attachment\_195" align="alignleft" width="300"\][![Encryption warning dialog in Thunderbird](images/encryption-warning-300x200.png)]({{ $page->baseUrl }}/wp-content/uploads/2014/11/encryption-warning.png) Encryption warning dialog in Thunderbird\[/caption\]
+\[caption id="attachment\_195" align="alignleft" width="300"\][![Encryption warning dialog in Thunderbird](images/encryption-warning-300x200.png)](/docs/wp-content/uploads/2014/11/encryption-warning.png) Encryption warning dialog in Thunderbird\[/caption\]
 
 ### Manual Setup
 
@@ -100,16 +100,16 @@ Other mail clients may be setup in a similar fashion. Just keep these parameters
 - Specify port **587** for outgoing e-mail
     - Port 25 is discouraged, because mail servers relay mail through this port rather than mail clients submitting an e-mail. Likewise, ISPs typically restrict access on this port via firewall.
 - Your login will always be **_user_@_yourdomain_**
-- Your password will always be the [same password]({{ $page->baseUrl }}/control-panel/resetting-your-password/ "Resetting your password") used to [access the control panel]({{ $page->baseUrl }}/control-panel/logging-into-the-control-panel/ "Logging into the control panel")
+- Your password will always be the [same password](/docs/control-panel/resetting-your-password/ "Resetting your password") used to [access the control panel](/docs/control-panel/logging-into-the-control-panel/ "Logging into the control panel")
 
 ## Still having problems logging in?
 
 If all of your credentials are correct, and your connection is not being blocked after 3 invalid requests in a 5 minute window, then 1 of 3 issues are to blame:
 
 1. Invalid password
-    - Solution: login to the [control panel]({{ $page->baseUrl }}/control-panel/logging-into-the-control-panel/ "Logging into the control panel") as the primary account holder. Visit **User** > **Manage Users**. Click the _Edit_ action under the **Actions** column. Enter a new password for this user.If you access e-mail as the primary account holder, _then_ you will be unable to login to the control panel if your password is invalid (e-mail and control panel use the same password source). Reset your password through the control panel [reset utility]({{ $page->baseUrl }}/control-panel/resetting-your-password/ "Resetting your password").
+    - Solution: login to the [control panel](/docs/control-panel/logging-into-the-control-panel/ "Logging into the control panel") as the primary account holder. Visit **User** > **Manage Users**. Click the _Edit_ action under the **Actions** column. Enter a new password for this user.If you access e-mail as the primary account holder, _then_ you will be unable to login to the control panel if your password is invalid (e-mail and control panel use the same password source). Reset your password through the control panel [reset utility](/docs/control-panel/resetting-your-password/ "Resetting your password").
 2. User denied IMAP/POP3 access
-    - Solution: this only happens with secondary users on the account. A user must be privileged to access the e-mail server to receive e-mail. Login to the [control panel]({{ $page->baseUrl }}/control-panel/logging-into-the-control-panel/ "Logging into the control panel") as the primary account holder.
+    - Solution: this only happens with secondary users on the account. A user must be privileged to access the e-mail server to receive e-mail. Login to the [control panel](/docs/control-panel/logging-into-the-control-panel/ "Logging into the control panel") as the primary account holder.
         1. Visit **User** > **Manage Users**
         2. Verify that _mail_ is not enabled for the user. The _mail_ column will be empty.
             1. If a checkmark is present, then the user is accessing with incorrect credentials.
@@ -118,4 +118,4 @@ If all of your credentials are correct, and your connection is not being blocked
             - If E**\-Mail** is already enabled, click **Advanced**
             - Verify that "_User may login to IMAP/POP3 server_" is also checked
 3. Your DNS configuration points to an old provider
-    - Solution: try accessing e-mail by the [server name]({{ $page->baseUrl }}/platform/what-is-my-server-name/ "What is my server name?"). If you can login successfully, then DNS has yet to [fully propagate]({{ $page->baseUrl }}/dns/how-long-does-dns-propagation-take/ "How long does DNS propagation take?") yet. If you changed [nameservers]({{ $page->baseUrl }}/dns/nameserver-settings/ "Nameserver settings") over 72 hours ago, verify the change went through by confirming with the company that manages your _domain registration_.
+    - Solution: try accessing e-mail by the [server name](/docs/platform/what-is-my-server-name/ "What is my server name?"). If you can login successfully, then DNS has yet to [fully propagate](/docs/dns/how-long-does-dns-propagation-take/ "How long does DNS propagation take?") yet. If you changed [nameservers](/docs/dns/nameserver-settings/ "Nameserver settings") over 72 hours ago, verify the change went through by confirming with the company that manages your _domain registration_.

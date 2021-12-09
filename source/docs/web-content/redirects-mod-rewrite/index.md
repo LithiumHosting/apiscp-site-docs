@@ -11,7 +11,7 @@ A redirect changes the URL, in browser, from one URL to another. A variety of re
 
 ## Usage
 
-All redirects are controlled through a [.htaccess]({{ $page->baseUrl }}/guides/htaccess-guide/) file in the [document root]({{ $page->baseUrl }}/web-content/where-is-site-content-served-from/) of your target [domain]({{ $page->baseUrl }}/control-panel/creating-addon-domain/) or [subdomain]({{ $page->baseUrl }}/web-content/creating-subdomain/). The following stanza is a common, and simple redirect if the URL is www.example.com, then redirect to example.com:
+All redirects are controlled through a [.htaccess](/docs/guides/htaccess-guide/) file in the [document root](/docs/web-content/where-is-site-content-served-from/) of your target [domain](/docs/control-panel/creating-addon-domain/) or [subdomain](/docs/web-content/creating-subdomain/). The following stanza is a common, and simple redirect if the URL is www.example.com, then redirect to example.com:
 
 RewriteEngine On
 RewriteBase /

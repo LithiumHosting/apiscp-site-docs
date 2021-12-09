@@ -11,13 +11,13 @@ When trying to redeploy a Passenger process, Passenger may refuse deployment, be
 
 ## Symptoms
 
-Upon launching an application after [restarting]({{ $page->baseUrl }}/ruby/restarting-passenger-processes/ "Restarting Passenger processes"), the app will hang and [log an error]({{ $page->baseUrl }}/cgi-passenger/viewing-launcher-errors/ "Viewing launcher errors") similar to:
+Upon launching an application after [restarting](/docs/ruby/restarting-passenger-processes/ "Restarting Passenger processes"), the app will hang and [log an error](/docs/cgi-passenger/viewing-launcher-errors/ "Viewing launcher errors") similar to:
 
 \[ 2015-03-03 14:36:46.2725 11560/7f728e250700 Pool2/Group.h:898 \]: Unable to spawn the the sole process for group /home/virtual/siteXXX/fst/var/subdomain/SUBDOMAIN/../../www/APPNAME#default because the max pool size has been reached. Trying to shutdown another idle process to free capacity...
 
 ## Solution
 
-Kill any resident processes from the [terminal]({{ $page->baseUrl }}/terminal/accessing-terminal/ "Accessing terminal"). You can accomplish this in one of two ways:
+Kill any resident processes from the [terminal](/docs/terminal/accessing-terminal/ "Accessing terminal"). You can accomplish this in one of two ways:
 
 ### Easy way
 

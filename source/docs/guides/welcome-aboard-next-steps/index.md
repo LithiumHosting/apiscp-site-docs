@@ -33,41 +33,41 @@ Registrar transfers take 3-10 business days to complete. Once your registrar has
 
 ### Setting Up E-mail
 
-Do you want to forward your e-mail to a remote account (less reliable) or have it delivered locally? If you want to forward it remotely, caveat emptor. See  KB: "[Creating a forwarded email]({{ $page->baseUrl }}/e-mail/creating-a-forwarded-e-mail/ "Creating a forwarded e-mail")". If you would like for mail to arrive on your hosting account, awesome: that's a sensible solution. You can either create a new mailbox via **User** > **Add User** within the [control panel]({{ $page->baseUrl }}/control-panel/logging-into-the-control-panel/ "Logging into the control panel") or to attach an e-mail address to an existing user, visit **Mail** > **Manage Mailboxes**. Enter the new e-mail address, and select your username. Mail access is covered in a separate KB article: "[Accessing e-mail]({{ $page->baseUrl }}/e-mail/accessing-e-mail/ "Accessing e-mail")"
+Do you want to forward your e-mail to a remote account (less reliable) or have it delivered locally? If you want to forward it remotely, caveat emptor. See  KB: "[Creating a forwarded email](/docs/e-mail/creating-a-forwarded-e-mail/ "Creating a forwarded e-mail")". If you would like for mail to arrive on your hosting account, awesome: that's a sensible solution. You can either create a new mailbox via **User** > **Add User** within the [control panel](/docs/control-panel/logging-into-the-control-panel/ "Logging into the control panel") or to attach an e-mail address to an existing user, visit **Mail** > **Manage Mailboxes**. Enter the new e-mail address, and select your username. Mail access is covered in a separate KB article: "[Accessing e-mail](/docs/e-mail/accessing-e-mail/ "Accessing e-mail")"
 
 ### Getting Your Site(s) Online
 
-_Almost done_! Now you need to create a web site in this location. If you're migrating over, then copy your website files to the [document root]({{ $page->baseUrl }}/web-content/where-is-site-content-served-from/ "Where is site content served from?") for your site, which is always `/var/www/html`. If you're starting fresh, [WordPress](http://www.wordpress.org) is always a great candidate. Just remove `index.html` from this location before uploading your new site. You can also edit this page on-the-fly under **Files** > **File Manager**.
+_Almost done_! Now you need to create a web site in this location. If you're migrating over, then copy your website files to the [document root](/docs/web-content/where-is-site-content-served-from/ "Where is site content served from?") for your site, which is always `/var/www/html`. If you're starting fresh, [WordPress](http://www.wordpress.org) is always a great candidate. Just remove `index.html` from this location before uploading your new site. You can also edit this page on-the-fly under **Files** > **File Manager**.
 
 > #### Preview Your Domain
 > 
-> Domains may be previewed by overriding global DNS. We have a separate guide available under KB: [Previewing your domain]({{ $page->baseUrl }}/dns/previewing-your-domain/ "Previewing your domain"). This method will work every time and allows you to preview your site before initiating nameserver changes.
+> Domains may be previewed by overriding global DNS. We have a separate guide available under KB: [Previewing your domain](/docs/dns/previewing-your-domain/ "Previewing your domain"). This method will work every time and allows you to preview your site before initiating nameserver changes.
 
 ## Miscellany
 
 ### Adding More Domains
 
-More domains may be [added]({{ $page->baseUrl }}/control-panel/creating-addon-domain/ "Creating an addon domain") to your account via **DNS** > **Addon Domains**. Just follow the same rules with **Domain Migration** section to get the tag attached to the right vehicle in the _proper state_. Always locate addon domains under `/var/www` instead of `/var/www/html`. There are pedantic [fringe cases]({{ $page->baseUrl }}/web-content/where-is-site-content-served-from/#careful "Where is site content served from?") covered elsewhere for the intrepid user.
+More domains may be [added](/docs/control-panel/creating-addon-domain/ "Creating an addon domain") to your account via **DNS** > **Addon Domains**. Just follow the same rules with **Domain Migration** section to get the tag attached to the right vehicle in the _proper state_. Always locate addon domains under `/var/www` instead of `/var/www/html`. There are pedantic [fringe cases](/docs/web-content/where-is-site-content-served-from/#careful "Where is site content served from?") covered elsewhere for the intrepid user.
 
 ### Understanding Permissions
 
-Apis Networks uses a separate, non-privileged user for its web server. This improves security by only letting the web server read what _you_ authorize it to read/access, but requires a few extra steps to setup PHP applications like [WordPress]({{ $page->baseUrl }}/wordpress-2/enabling-write-access/ "Enabling write-access") and Drupal. KB: [Permissions overview]({{ $page->baseUrl }}/guides/permissions-overview/ "Permissions overview") is a crash-course in permissions. Know what you're doing? Great. Just change relevant directories that require write access to _717_.
+Apis Networks uses a separate, non-privileged user for its web server. This improves security by only letting the web server read what _you_ authorize it to read/access, but requires a few extra steps to setup PHP applications like [WordPress](/docs/wordpress-2/enabling-write-access/ "Enabling write-access") and Drupal. KB: [Permissions overview](/docs/guides/permissions-overview/ "Permissions overview") is a crash-course in permissions. Know what you're doing? Great. Just change relevant directories that require write access to _717_.
 
 ### Building Your Own Software
 
-Congratulations, you've moved up in comfort! Clients may build any software and run any service that is necessary to operation of the web site – _please don't run a game server or bitcoin miner_. Any applications should be plug-and-play. C applications will [require installation]({{ $page->baseUrl }}/terminal/compiling-programs/ "Compiling programs") under `/usr/local`. Gems, packages, modules, eggs, etc. (_kudos to those who affiliated terms with language_) will be installed just fine with their respective install command. `gem install`,  `pear install`,  `perl -MCPAN -e 'install'`, `pip-python install` require no further configuration.
+Congratulations, you've moved up in comfort! Clients may build any software and run any service that is necessary to operation of the web site – _please don't run a game server or bitcoin miner_. Any applications should be plug-and-play. C applications will [require installation](/docs/terminal/compiling-programs/ "Compiling programs") under `/usr/local`. Gems, packages, modules, eggs, etc. (_kudos to those who affiliated terms with language_) will be installed just fine with their respective install command. `gem install`,  `pear install`,  `perl -MCPAN -e 'install'`, `pip-python install` require no further configuration.
 
 ### Running Services
 
-Need to run a daemon? No problem. Clients can run up to 10 services from the [terminal]({{ $page->baseUrl }}/terminal/accessing-terminal/ "Accessing terminal") that listen externally on a TCP socket. See KB: [Listening on ports]({{ $page->baseUrl }}/terminal/listening-ports/ "Listening on ports").
+Need to run a daemon? No problem. Clients can run up to 10 services from the [terminal](/docs/terminal/accessing-terminal/ "Accessing terminal") that listen externally on a TCP socket. See KB: [Listening on ports](/docs/terminal/listening-ports/ "Listening on ports").
 
 Looking for specific, advanced guides? Check these out:
 
-- [WordPress]({{ $page->baseUrl }}/wordpress/installing-wordpress/ "Installing WordPress")
-- [Redis]({{ $page->baseUrl }}/guides/running-redis/ "Running Redis")
-- [Node.js]({{ $page->baseUrl }}/guides/running-node-js/ "Running Node.js")
-- [Django]({{ $page->baseUrl }}/python/django-quickstart/ "Django quickstart")
-- [Rails]({{ $page->baseUrl }}/ruby/setting-rails-passenger/ "Setting up Rails with Passenger")
-- [MongoDB]({{ $page->baseUrl }}/guides/running-mongodb/ "Running MongoDB")
+- [WordPress](/docs/wordpress/installing-wordpress/ "Installing WordPress")
+- [Redis](/docs/guides/running-redis/ "Running Redis")
+- [Node.js](/docs/guides/running-node-js/ "Running Node.js")
+- [Django](/docs/python/django-quickstart/ "Django quickstart")
+- [Rails](/docs/ruby/setting-rails-passenger/ "Setting up Rails with Passenger")
+- [MongoDB](/docs/guides/running-mongodb/ "Running MongoDB")
 
 Thanks again for joining, and have fun!

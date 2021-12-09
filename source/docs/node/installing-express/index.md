@@ -7,15 +7,15 @@ date: "2015-03-17"
 
 ## Overview
 
-[Express](http://expressjs.com/) is a Node.js framework inspired by Sinatra for Ruby: it's based on minimalism with a penchant for performance. Express is part of the [MEAN](http://mean.io) fullstack: **M**ongoDB, **E**xpress, **A**ngular.js, and **N**ode.js. MongoDB may be setup in a [separate guide]({{ $page->baseUrl }}/guides/running-mongodb/ "Running MongoDB").
+[Express](http://expressjs.com/) is a Node.js framework inspired by Sinatra for Ruby: it's based on minimalism with a penchant for performance. Express is part of the [MEAN](http://mean.io) fullstack: **M**ongoDB, **E**xpress, **A**ngular.js, and **N**ode.js. MongoDB may be setup in a [separate guide](/docs/guides/running-mongodb/ "Running MongoDB").
 
-Express is supported on all [v6+]({{ $page->baseUrl }}/platform/determining-platform-version/ "Determining platform version") platforms using Passenger to manage isolated processes.
+Express is supported on all [v6+](/docs/platform/determining-platform-version/ "Determining platform version") platforms using Passenger to manage isolated processes.
 
 ## Quickstart
 
-All steps are done from the [terminal]({{ $page->baseUrl }}/terminal/accessing-terminal/ "Accessing terminal"):
+All steps are done from the [terminal](/docs/terminal/accessing-terminal/ "Accessing terminal"):
 
-1. PREREQUISITE: create a Passenger-compatible [filesystem layout]({{ $page->baseUrl }}/cgi-passenger/passenger-application-layout/ "Passenger application layout")
+1. PREREQUISITE: create a Passenger-compatible [filesystem layout](/docs/cgi-passenger/passenger-application-layout/ "Passenger application layout")
     - In this example, our app will reside in `/var/www/express`. The filesystem layout looks like:
         
         express
@@ -24,7 +24,7 @@ All steps are done from the [terminal]({{ $page->baseUrl }}/terminal/accessing-t
         │   └── .htaccess
         └── tmp
         
-2. From the root directory, `/var/www/express`, install Express locally with [npm]({{ $page->baseUrl }}/guides/running-node-js/#npm "Running Node.js"):
+2. From the root directory, `/var/www/express`, install Express locally with [npm](/docs/guides/running-node-js/#npm "Running Node.js"):
     - npm install express
         
 3. Now create a startup file named `app.js` within `express/`. Copy and paste the following as a sample application in the root folder:
@@ -47,7 +47,7 @@ All steps are done from the [terminal]({{ $page->baseUrl }}/terminal/accessing-t
     
     echo "PassengerNodejs /usr/bin/node" > public/.htaccess
     
-5. Lastly, connect `public/` to a [subdomain]({{ $page->baseUrl }}/web-content/creating-subdomain/ "Creating a subdomain") within the [control panel]({{ $page->baseUrl }}/control-panel/logging-into-the-control-panel/ "Logging into the control panel")
+5. Lastly, connect `public/` to a [subdomain](/docs/web-content/creating-subdomain/ "Creating a subdomain") within the [control panel](/docs/control-panel/logging-into-the-control-panel/ "Logging into the control panel")
 6. _**Enjoy!**_
 
 ### Using Express Generator
@@ -56,7 +56,7 @@ Express Generator is a separate application to facilitate filesystem creation f
 
 npm install -g express-generator
 
-Now run `express <appname>` where _appname_ is a new app to create, e.g. `cd /var/www && express express` to create a new app located in `/var/www/express`. The application, `express`, will scaffold a new filesystem layout that is [compatible]({{ $page->baseUrl }}/cgi-passenger/passenger-application-layout/ "Passenger application layout") with Passenger.
+Now run `express <appname>` where _appname_ is a new app to create, e.g. `cd /var/www && express express` to create a new app located in `/var/www/express`. The application, `express`, will scaffold a new filesystem layout that is [compatible](/docs/cgi-passenger/passenger-application-layout/ "Passenger application layout") with Passenger.
 
 Change directories to the newly-created app root, and run `npm install` to install dependencies.
 

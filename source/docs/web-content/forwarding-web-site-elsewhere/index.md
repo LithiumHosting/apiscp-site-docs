@@ -7,7 +7,7 @@ date: "2017-02-12"
 
 ## Overview
 
-A forwarded website can be accomplished by first creating a [subdomain]({{ $page->baseUrl }}/web-content/creating-subdomain/) or [addon domain]({{ $page->baseUrl }}/control-panel/creating-addon-domain/) in the [control panel]({{ $page->baseUrl }}/control-panel/logging-into-the-control-panel/), then using an [.htaccess]({{ $page->baseUrl }}/guides/htaccess-guide/) in [document root]({{ $page->baseUrl }}/web-content/where-is-site-content-served-from/) to redirect all traffic to the new web site using [mod\_rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html).
+A forwarded website can be accomplished by first creating a [subdomain](/docs/web-content/creating-subdomain/) or [addon domain](/docs/control-panel/creating-addon-domain/) in the [control panel](/docs/control-panel/logging-into-the-control-panel/), then using an [.htaccess](/docs/guides/htaccess-guide/) in [document root](/docs/web-content/where-is-site-content-served-from/) to redirect all traffic to the new web site using [mod\_rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html).
 
 ### Important terminology
 

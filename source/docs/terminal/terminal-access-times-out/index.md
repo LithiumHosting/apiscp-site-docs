@@ -15,4 +15,4 @@ All servers use a 3-5-10 brute-force deterrent mechanism: **three** invalid logi
 
 ## Solution
 
-Use the right credentials, dummy! See KB: [Accessing terminal]({{ $page->baseUrl }}/terminal/accessing-terminal/ "Accessing terminal").
+Use the right credentials, dummy! See KB: [Accessing terminal](/docs/terminal/accessing-terminal/ "Accessing terminal").

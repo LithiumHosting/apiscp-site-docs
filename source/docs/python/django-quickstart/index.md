@@ -7,23 +7,23 @@ date: "2015-01-24"
 
 ## Overview
 
-[Django](https://www.djangoproject.com/) is a web framework based on [Python](https://www.python.org/). Python is available on all packages, and a Django application may be uploaded on any package. But, to create a new project on the server and complete this quickstart, a package [with terminal access]({{ $page->baseUrl }}/terminal/is-terminal-access-available/ "Is terminal access available?") is necessary. This quickstart covers using Django with [Passenger](https://www.phusionpassenger.com/) available on [v6+ platforms]({{ $page->baseUrl }}/platform/determining-platform-version/ "Determining platform version").
+[Django](https://www.djangoproject.com/) is a web framework based on [Python](https://www.python.org/). Python is available on all packages, and a Django application may be uploaded on any package. But, to create a new project on the server and complete this quickstart, a package [with terminal access](/docs/terminal/is-terminal-access-available/ "Is terminal access available?") is necessary. This quickstart covers using Django with [Passenger](https://www.phusionpassenger.com/) available on [v6+ platforms](/docs/platform/determining-platform-version/ "Determining platform version").
 
 ## Quickstart
 
-From the [terminal]({{ $page->baseUrl }}/terminal/accessing-terminal/ "Accessing terminal"), first install Django + MySQL from PyPI using Python's [package manager]({{ $page->baseUrl }}/python/installing-packages/ "Installing packages"), pip.
+From the [terminal](/docs/terminal/accessing-terminal/ "Accessing terminal"), first install Django + MySQL from PyPI using Python's [package manager](/docs/python/installing-packages/ "Installing packages"), pip.
 
 `pip-python install django mysql`
 
-**Important (_v6+ platforms_):** On v6+ platforms, first designate a [Python interpreter]({{ $page->baseUrl }}/python/changing-python-versions/) (do not use the default, "system"), then after installation, change the [interpreter location]({{ $page->baseUrl }}/python/python-bins-fail-import-library/ "Python bins fail to import library") of `/usr/local/bin/django-admin`.
+**Important (_v6+ platforms_):** On v6+ platforms, first designate a [Python interpreter](/docs/python/changing-python-versions/) (do not use the default, "system"), then after installation, change the [interpreter location](/docs/python/python-bins-fail-import-library/ "Python bins fail to import library") of `/usr/local/bin/django-admin`.
 
-Now, Django has been installed on your account. Setup a Django application. We'll modify Django slightly to create a web-accessible public/ folder and keep code outside a URL-accessible resource, one level down from the [document root]({{ $page->baseUrl }}/web-content/where-is-site-content-served-from/ "Where is site content served from?").
+Now, Django has been installed on your account. Setup a Django application. We'll modify Django slightly to create a web-accessible public/ folder and keep code outside a URL-accessible resource, one level down from the [document root](/docs/web-content/where-is-site-content-served-from/ "Where is site content served from?").
 
 1. Switch to /var/www to create a new project:
     - `cd /var/www`
 2. Initialize an application named myapp
     - `django-admin startproject myapp`
-    - **Note:** per documentation, it's recommended not to initialize projects under /var/www. This is only true if /var/www is accessible as a [document root]({{ $page->baseUrl }}/web-content/where-is-site-content-served-from/ "Where is site content served from?") (which it is not)
+    - **Note:** per documentation, it's recommended not to initialize projects under /var/www. This is only true if /var/www is accessible as a [document root](/docs/web-content/where-is-site-content-served-from/ "Where is site content served from?") (which it is not)
 3. Django creates a management controller (`manage.py`) within the folder named after the project, in addition to an app named after the project, one level down. Move to the app folder from `/var/www`:
     - `cd myapp/myapp`
 4. Make a `public/` and `tmp/` directory for serving public files and storing logs. tmp/ will be used to control application restarts with Passenger.
@@ -48,12 +48,12 @@ Now, Django has been installed on your account. Setup a Django application. We'
         
     - **Explanation:** only the first 2 lines are changed: (1) [sys module](https://docs.python.org/2/library/sys.html) is loaded after os, this is necessary for (2) appending a library path via `sys.path.append`, the value being the _project root_ (`/var/www/myapp` in this case).
 7. Lastly, connect this application to a web-accessible path
-    - visit **Web** > **Subdomains** within the [control panel]({{ $page->baseUrl }}/control-panel/logging-into-the-control-panel/ "Logging into the control panel"). Create a new subdomain called _myapp _with the [document root]({{ $page->baseUrl }}/web-content/where-is-site-content-served-from/ "Where is site content served from?") `/var/www/myapp/myapp/public`
+    - visit **Web** > **Subdomains** within the [control panel](/docs/control-panel/logging-into-the-control-panel/ "Logging into the control panel"). Create a new subdomain called _myapp _with the [document root](/docs/web-content/where-is-site-content-served-from/ "Where is site content served from?") `/var/www/myapp/myapp/public`
         
-        \[caption id="attachment\_549" align="alignnone" width="300"\][![Linking a Django subdomain underneath a project called myapp and its first app called "myapp" using Passenger.](images/django-subdomain-ex-300x69.png)]({{ $page->baseUrl }}/wp-content/uploads/2015/01/django-subdomain-ex.png) Linking a Django subdomain underneath a project called myapp and its first app called "myapp" using Passenger.\[/caption\]
+        \[caption id="attachment\_549" align="alignnone" width="300"\][![Linking a Django subdomain underneath a project called myapp and its first app called "myapp" using Passenger.](images/django-subdomain-ex-300x69.png)](/docs/wp-content/uploads/2015/01/django-subdomain-ex.png) Linking a Django subdomain underneath a project called myapp and its first app called "myapp" using Passenger.\[/caption\]
 8. __**Enjoy!**__
     
-    \[caption id="attachment\_557" align="alignnone" width="300"\][![Confirmation page that Django is up and running a-OK!](images/django-confirmation-page-300x58.png)]({{ $page->baseUrl }}/wp-content/uploads/2015/01/django-confirmation-page.png) Confirmation page that Django is up and running a-OK!\[/caption\]
+    \[caption id="attachment\_557" align="alignnone" width="300"\][![Confirmation page that Django is up and running a-OK!](images/django-confirmation-page-300x58.png)](/docs/wp-content/uploads/2015/01/django-confirmation-page.png) Confirmation page that Django is up and running a-OK!\[/caption\]
 
 ### Restarting your application
 

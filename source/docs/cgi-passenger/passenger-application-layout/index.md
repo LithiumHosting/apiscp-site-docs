@@ -7,17 +7,17 @@ date: "2015-03-01"
 
 ## Overview
 
-All Passenger [applications]({{ $page->baseUrl }}/cgi-passenger/passenger-supported-apps/ "Passenger-supported Apps") require a compatible filesystem layout to launch and manage a Passenger-backed application. A layout consists of 4 features:
+All Passenger [applications](/docs/cgi-passenger/passenger-supported-apps/ "Passenger-supported Apps") require a compatible filesystem layout to launch and manage a Passenger-backed application. A layout consists of 4 features:
 
 1. Startup file
     - Passenger loads this file to start the application
     - Startup file names differ by application type (_Python, Ruby, Node.js, Meteor_)
-2. [Document root]({{ $page->baseUrl }}/web-content/where-is-site-content-served-from/ "Where is site content served from?") folder called `public/`
+2. [Document root](/docs/web-content/where-is-site-content-served-from/ "Where is site content served from?") folder called `public/`
     - all static content goes here (images, JavaScript, CSS)
 3. Apache configuration file named `.htaccess`
-    - [htaccess rules]({{ $page->baseUrl }}/guides/htaccess-guide/ ".htaccess Guide") instruct the web server to treat this as a Passenger app
+    - [htaccess rules](/docs/guides/htaccess-guide/ ".htaccess Guide") instruct the web server to treat this as a Passenger app
 4. `tmp/` folder for miscellany
-    - tmp/ is used primarily to control Passenger process [restarts]({{ $page->baseUrl }}/cgi-passenger/restarting-passenger-processes/ "Restarting Passenger processes")
+    - tmp/ is used primarily to control Passenger process [restarts](/docs/cgi-passenger/restarting-passenger-processes/ "Restarting Passenger processes")
 
 This is an example layout for /var/www/nodejs, a sample Node.js application:
 

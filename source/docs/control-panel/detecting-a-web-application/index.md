@@ -7,10 +7,10 @@ date: "2016-06-17"
 
 ## Overview
 
-Supported web applications installed under your account may be detected by first selecting the subdomain or domain under **Web** > **Web Apps** within the [control panel]({{ $page->baseUrl }}/control-panel/logging-into-the-control-panel/). Select **Detect** from the _Actions_ heading. If detected successfully, the app name will be present along with supported options.
+Supported web applications installed under your account may be detected by first selecting the subdomain or domain under **Web** > **Web Apps** within the [control panel](/docs/control-panel/logging-into-the-control-panel/). Select **Detect** from the _Actions_ heading. If detected successfully, the app name will be present along with supported options.
 
-[![app-detection](images/app-detection.png)]({{ $page->baseUrl }}/wp-content/uploads/2016/06/app-detection.png)
+[![app-detection](images/app-detection.png)](/docs/wp-content/uploads/2016/06/app-detection.png)
 
 ## See Also
 
-- [Understanding Fortification]({{ $page->baseUrl }}/control-panel/understanding-fortification/)
+- [Understanding Fortification](/docs/control-panel/understanding-fortification/)
